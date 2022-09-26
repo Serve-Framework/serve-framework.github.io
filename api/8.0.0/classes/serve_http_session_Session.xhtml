@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - serve\http\session\Session</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#serve_http_session">serve\http\session</a>
+          </li>
+          <li class="separator">Session</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/serve/http/session/Session.php.xhtml#line19">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>serve\http\session\</small>Session</h1>
+        <h4>Session Manager.</h4>
+        <p/>
+        <ul>
+          <li>Author: Joe J. Howard</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Session
+                extends MagicObjectArray
+            {<br/><ul class="none"><li>// members</li><li>private <span title="\serve\http\session\storage\StoreInterface">StoreInterface</span> <a href="#members">$store</a>;
+                    </li><li>private <span title="\serve\http\session\Flash">Flash</span> <a href="#members">$flash</a>;
+                    </li><li>private <span title="\serve\http\session\Token">Token</span> <a href="#members">$token</a>;
+                    </li><li>private string <a href="#members">$flashKey</a> =
+                        'serve_flash';
+                    </li><li>private string <a href="#members">$tokenKey</a> =
+                        'serve_token';
+                    </li><li>private string <a href="#members">$dataKey</a> =
+                        'serve_data';
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="serve\http\session\Session" href="../classes/serve_http_session_Session/__construct.xhtml">__construct</a>()
+                    </li><li>public void <a title="serve\http\session\Session" href="../classes/serve_http_session_Session/configure.xhtml">configure</a>()
+                    </li><li>public void <a title="serve\http\session\Session" href="../classes/serve_http_session_Session/save.xhtml">save</a>()
+                    </li><li>private void <a title="serve\http\session\Session" href="../classes/serve_http_session_Session/initializeSession.xhtml">initializeSession</a>()
+                    </li><li>private void <a title="serve\http\session\Session" href="../classes/serve_http_session_Session/loadData.xhtml">loadData</a>()
+                    </li><li>public <span title="Token">Token</span> <a title="serve\http\session\Session" href="../classes/serve_http_session_Session/token.xhtml">token</a>()
+                    </li><li>public <span title="Flash">Flash</span> <a title="serve\http\session\Session" href="../classes/serve_http_session_Session/flash.xhtml">flash</a>()
+                    </li><li>public void <a title="serve\http\session\Session" href="../classes/serve_http_session_Session/destroy.xhtml">destroy</a>()
+                    </li><li>public void <a title="serve\http\session\Session" href="../classes/serve_http_session_Session/start.xhtml">start</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>serve\common\MagicObjectArray</li>
+          </ul>
+        </div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="dataKey"><strong>$dataKey</strong>
+                —
+                string<br/><span class="indent">The key that is used to store the key/values inside $_SESSION[$sessionKey].</span></li>
+            <li id="flash"><strong>$flash</strong>
+                —
+                <a title="\serve\http\session\Flash" href="../classes/_serve_http_session_Flash.xhtml">\serve\http\session\Flash</a><br/><span class="indent">The session flash data.</span></li>
+            <li id="flashKey"><strong>$flashKey</strong>
+                —
+                string<br/><span class="indent">The key that is used to store flash data inside $_SESSION[$sessionKey].</span></li>
+            <li id="store"><strong>$store</strong>
+                —
+                <a title="\serve\http\session\storage\StoreInterface" href="../classes/_serve_http_session_storage_StoreInterface.xhtml">\serve\http\session\storage\StoreInterface</a><br/><span class="indent">The session storage implementation.</span></li>
+            <li id="token"><strong>$token</strong>
+                —
+                <a title="\serve\http\session\Token" href="../classes/_serve_http_session_Token.xhtml">\serve\http\session\Token</a><br/><span class="indent">CSRF token.</span></li>
+            <li id="tokenKey"><strong>$tokenKey</strong>
+                —
+                string<br/><span class="indent">The key that is used to store the CSRF token inside $_SESSION[$sessionKey].</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="initializeSession"><a title="serve\http\session\Session" href="../classes/serve_http_session_Session/initializeSession.xhtml">initializeSession()</a>
+                — Initialize the session.</li>
+            <li id="loadData"><a title="serve\http\session\Session" href="../classes/serve_http_session_Session/loadData.xhtml">loadData()</a>
+                — Load the data from the session.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="serve\http\session\Session" href="../classes/serve_http_session_Session/__construct.xhtml">__construct()</a>
+                — Constructor.</li>
+            <li id="configure"><a title="serve\http\session\Session" href="../classes/serve_http_session_Session/configure.xhtml">configure()</a>
+                — Set cookie the configuration.</li>
+            <li id="destroy"><a title="serve\http\session\Session" href="../classes/serve_http_session_Session/destroy.xhtml">destroy()</a>
+                — Clear the session.</li>
+            <li id="flash"><a title="serve\http\session\Session" href="../classes/serve_http_session_Session/flash.xhtml">flash()</a>
+                — Get the access token.</li>
+            <li id="save"><a title="serve\http\session\Session" href="../classes/serve_http_session_Session/save.xhtml">save()</a>
+                — Save the session so PHP can send it.</li>
+            <li id="start"><a title="serve\http\session\Session" href="../classes/serve_http_session_Session/start.xhtml">start()</a>
+                — Clear the session.</li>
+            <li id="token"><a title="serve\http\session\Session" href="../classes/serve_http_session_Session/token.xhtml">token()</a>
+                — Get the access token.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2022 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

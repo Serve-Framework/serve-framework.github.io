@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - serve\utility\Pluralize</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#serve_utility">serve\utility</a>
+          </li>
+          <li class="separator">Pluralize</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/serve/utility/Pluralize.php.xhtml#line25">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>serve\utility\</small>Pluralize</h1>
+        <h4>Word pluralizer.</h4>
+        <p/>
+        <ul>
+          <li>Author: Joe J. Howard</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Pluralize
+            {<br/><ul class="none"><li>// members</li><li>private static  <a href="#members">$word</a>;
+                    </li><li>private static  <a href="#members">$lowercase</a>;
+                    </li><li>private static  <a href="#members">$upperCase</a>;
+                    </li><li>private static  <a href="#members">$sentenceCase</a>;
+                    </li><li>private static  <a href="#members">$casing</a>;
+                    </li><li>private static array <a href="#members">$sibilants</a> =
+                        ;
+                    </li><li>private static array <a href="#members">$vowels</a> =
+                        ;
+                    </li><li>private static array <a href="#members">$consonants</a> =
+                        ;
+                    </li></ul><ul class="none"><li>// methods</li><li>public static string <a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/convert.xhtml">convert</a>()
+                    </li><li>private static bool <a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/isUncountable.xhtml">isUncountable</a>()
+                    </li><li>private static bool|string <a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/isIrregular.xhtml">isIrregular</a>()
+                    </li><li>private static array|false <a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/autoSuffix.xhtml">autoSuffix</a>()
+                    </li><li>private static string <a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/getCasing.xhtml">getCasing</a>()
+                    </li><li>private static string <a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/toCasing.xhtml">toCasing</a>()
+                    </li><li>private static string <a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/suffix.xhtml">suffix</a>()
+                    </li><li>private static string <a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/sliceFromEnd.xhtml">sliceFromEnd</a>()
+                    </li><li>private static string <a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/nthLast.xhtml">nthLast</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="casing"><strong>$casing</strong>
+                —
+                string<br/><span class="indent">Casing pattern of the provided word.</span></li>
+            <li id="consonants"><strong>$consonants</strong>
+                —
+                array<br/><span class="indent">Consonants.</span></li>
+            <li id="lowercase"><strong>$lowercase</strong>
+                —
+                string<br/><span class="indent">Lowercase version of word.</span></li>
+            <li id="sentenceCase"><strong>$sentenceCase</strong>
+                —
+                string<br/><span class="indent">Sentence-case version of word.</span></li>
+            <li id="sibilants"><strong>$sibilants</strong>
+                —
+                array<br/><span class="indent">Sibilants.</span></li>
+            <li id="upperCase"><strong>$upperCase</strong>
+                —
+                string<br/><span class="indent">Uppercase version of word.</span></li>
+            <li id="vowels"><strong>$vowels</strong>
+                —
+                array<br/><span class="indent">Vowels.</span></li>
+            <li id="word"><strong>$word</strong>
+                —
+                string<br/><span class="indent">The word to convert.</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="autoSuffix"><a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/autoSuffix.xhtml">autoSuffix()</a>
+                — Return an array with an index of where to cut off the ending and a suffix or FALSE.</li>
+            <li id="getCasing"><a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/getCasing.xhtml">getCasing()</a>
+                — Get provided casing of word.</li>
+            <li id="isIrregular"><a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/isIrregular.xhtml">isIrregular()</a>
+                — Returns plural version of iregular words or FALSE if it is not irregular.</li>
+            <li id="isUncountable"><a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/isUncountable.xhtml">isUncountable()</a>
+                — Is the word irregular and uncountable (e.g fish).</li>
+            <li id="nthLast"><a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/nthLast.xhtml">nthLast()</a>
+                — Get the nth last character of a string.</li>
+            <li id="sliceFromEnd"><a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/sliceFromEnd.xhtml">sliceFromEnd()</a>
+                — Strip end off a word at a given char index and return the start part.</li>
+            <li id="suffix"><a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/suffix.xhtml">suffix()</a>
+                — Strip end off a word at a given char index and return the end part.</li>
+            <li id="toCasing"><a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/toCasing.xhtml">toCasing()</a>
+                — Convert word to a casing.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="convert"><a title="serve\utility\Pluralize" href="../classes/serve_utility_Pluralize/convert.xhtml">convert()</a>
+                — Pluralize a word.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2022 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

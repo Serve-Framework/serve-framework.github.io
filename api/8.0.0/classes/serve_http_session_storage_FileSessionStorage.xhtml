@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - serve\http\session\storage\FileSessionStorage</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#serve_http_session_storage">serve\http\session\storage</a>
+          </li>
+          <li class="separator">FileSessionStorage</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/serve/http/session/storage/FileSessionStorage.php.xhtml#line29">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>serve\http\session\storage\</small>FileSessionStorage</h1>
+        <h4>Session encrypt/decrypt.</h4>
+        <p/>
+        <ul>
+          <li>Author: Joe J. Howard</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class FileSessionStorage
+                implements
+                <a title="serve\http\session\storage\StoreInterface" href="../interfaces/serve_http_session_storage_StoreInterface.xhtml">StoreInterface</a>
+            {<br/><ul class="none"><li>// members</li><li>private <span title="serve\http\session\storage\string|null">string|null</span> <a href="#members">$id</a> =
+                        '';
+                    </li><li>private <span title="serve\http\session\storage\bool">bool</span> <a href="#members">$started</a> =
+                        false;
+                    </li><li>private <span title="serve\http\session\storage\bool">bool</span> <a href="#members">$sent</a> =
+                        false;
+                    </li><li>private array <a href="#members">$cookieParams</a> =
+                        ;
+                    </li><li>private string <a href="#members">$storageDir</a> =
+                        '';
+                    </li><li>private string <a href="#members">$session_name</a> =
+                        'serve_session';
+                    </li><li>private <span title="\serve\file\Filesystem">Filesystem</span> <a href="#members">$filesystem</a>;
+                    </li><li>private <span title="\serve\security\Crypto">Crypto</span> <a href="#members">$crypto</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/__construct.xhtml">__construct</a>()
+                    </li><li>public void <a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_save_path.xhtml">session_save_path</a>()
+                    </li><li>public void <a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_start.xhtml">session_start</a>()
+                    </li><li>public void <a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_destroy.xhtml">session_destroy</a>()
+                    </li><li>public void <a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_id.xhtml">session_id</a>()
+                    </li><li>public void <a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_name.xhtml">session_name</a>()
+                    </li><li>public void <a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_regenerate_id.xhtml">session_regenerate_id</a>()
+                    </li><li>public void <a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_set_cookie_params.xhtml">session_set_cookie_params</a>()
+                    </li><li>public void <a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_get_cookie_params.xhtml">session_get_cookie_params</a>()
+                    </li><li>public void <a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_gc.xhtml">session_gc</a>()
+                    </li><li>public void <a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/read.xhtml">read</a>()
+                    </li><li>public void <a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/write.xhtml">write</a>()
+                    </li><li>public void <a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/send.xhtml">send</a>()
+                    </li><li>private false|string <a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/sessionFile.xhtml">sessionFile</a>()
+                    </li><li>private void <a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/generateId.xhtml">generateId</a>()
+                    </li><li>private bool <a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/sessionFileExists.xhtml">sessionFileExists</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Implements</h4>
+          <ul>
+            <li>
+              <a title="serve\http\session\storage\StoreInterface" href="../interfaces/serve_http_session_storage_StoreInterface.xhtml">serve\http\session\storage\StoreInterface</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="cookieParams"><strong>$cookieParams</strong>
+                —
+                array<br/><span class="indent">Session cookie parameters.</span></li>
+            <li id="crypto"><strong>$crypto</strong>
+                —
+                <a title="\serve\security\Crypto" href="../classes/_serve_security_Crypto.xhtml">\serve\security\Crypto</a><br/><span class="indent">Crypto instance.</span></li>
+            <li id="filesystem"><strong>$filesystem</strong>
+                —
+                <a title="\serve\file\Filesystem" href="../classes/_serve_file_Filesystem.xhtml">\serve\file\Filesystem</a><br/><span class="indent">Filesystem instance.</span></li>
+            <li id="id"><strong>$id</strong>
+                —
+                <a title="serve\http\session\storage\string|null" href="../classes/serve_http_session_storage_string|null.xhtml">serve\http\session\storage\string|null</a><br/><span class="indent">Current session id.</span></li>
+            <li id="sent"><strong>$sent</strong>
+                —
+                <a title="serve\http\session\storage\bool" href="../classes/serve_http_session_storage_bool.xhtml">serve\http\session\storage\bool</a><br/><span class="indent">Has the session already been sent ?</span></li>
+            <li id="session_name"><strong>$session_name</strong>
+                —
+                string<br/><span class="indent">Session cookie name.</span></li>
+            <li id="started"><strong>$started</strong>
+                —
+                <a title="serve\http\session\storage\bool" href="../classes/serve_http_session_storage_bool.xhtml">serve\http\session\storage\bool</a><br/><span class="indent">Has the session already been started ?</span></li>
+            <li id="storageDir"><strong>$storageDir</strong>
+                —
+                string<br/><span class="indent">Where to save the files to.</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="generateId"><a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/generateId.xhtml">generateId()</a>
+                — Generate a session id.</li>
+            <li id="sessionFile"><a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/sessionFile.xhtml">sessionFile()</a>
+                — Get the path to the current session file.</li>
+            <li id="sessionFileExists"><a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/sessionFileExists.xhtml">sessionFileExists()</a>
+                — Get the path to the current session file.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/__construct.xhtml">__construct()</a>
+                — Constructor.</li>
+            <li id="read"><a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/read.xhtml">read()</a>
+                — {@inheritDoc}</li>
+            <li id="send"><a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/send.xhtml">send()</a>
+                — {@inheritDoc}</li>
+            <li id="session_destroy"><a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_destroy.xhtml">session_destroy()</a>
+                — {@inheritDoc}</li>
+            <li id="session_gc"><a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_gc.xhtml">session_gc()</a>
+                — {@inheritDoc}</li>
+            <li id="session_get_cookie_params"><a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_get_cookie_params.xhtml">session_get_cookie_params()</a>
+                — {@inheritDoc}</li>
+            <li id="session_id"><a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_id.xhtml">session_id()</a>
+                — {@inheritDoc}</li>
+            <li id="session_name"><a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_name.xhtml">session_name()</a>
+                — {@inheritDoc}</li>
+            <li id="session_regenerate_id"><a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_regenerate_id.xhtml">session_regenerate_id()</a>
+                — {@inheritDoc}</li>
+            <li id="session_save_path"><a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_save_path.xhtml">session_save_path()</a>
+                — {@inheritDoc}</li>
+            <li id="session_set_cookie_params"><a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_set_cookie_params.xhtml">session_set_cookie_params()</a>
+                — {@inheritDoc}</li>
+            <li id="session_start"><a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/session_start.xhtml">session_start()</a>
+                — {@inheritDoc}</li>
+            <li id="write"><a title="serve\http\session\storage\FileSessionStorage" href="../classes/serve_http_session_storage_FileSessionStorage/write.xhtml">write()</a>
+                — {@inheritDoc}</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2022 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

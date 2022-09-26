@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - serve\deployment\webhooks\Github</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#serve_deployment_webhooks">serve\deployment\webhooks</a>
+          </li>
+          <li class="separator">Github</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/serve/deployment/webhooks/Github.php.xhtml#line28">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>serve\deployment\webhooks\</small>Github</h1>
+        <h4>Github webhooks implementation.</h4>
+        <p/>
+        <ul>
+          <li>Author: Joe J. Howard</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Github
+                implements
+                <a title="serve\deployment\webhooks\WebhookInterface" href="../interfaces/serve_deployment_webhooks_WebhookInterface.xhtml">WebhookInterface</a>
+            {<br/><ul class="none"><li>// members</li><li>private <span title="\serve\http\request\Request">Request</span> <a href="#members">$request</a>;
+                    </li><li>private <span title="\serve\http\response\Response">Response</span> <a href="#members">$response</a>;
+                    </li><li>private <span title="\serve\shell\Shell">Shell</span> <a href="#members">$shell</a>;
+                    </li><li>private  <a href="#members">$secret</a>;
+                    </li><li>private  <a href="#members">$event</a>;
+                    </li><li>private  <a href="#members">$payload</a>;
+                    </li><li>public string <a href="#members">$_fileIn</a> =
+                        'php://input';
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/__construct.xhtml">__construct</a>()
+                    </li><li>public bool <a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/validate.xhtml">validate</a>()
+                    </li><li>public string <a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/event.xhtml">event</a>()
+                    </li><li>public array <a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/payload.xhtml">payload</a>()
+                    </li><li>public void <a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/deploy.xhtml">deploy</a>()
+                    </li><li>private void <a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/gitPull.xhtml">gitPull</a>()
+                    </li><li>private bool <a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/payloadExists.xhtml">payloadExists</a>()
+                    </li><li>private bool <a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/headersExist.xhtml">headersExist</a>()
+                    </li><li>private bool <a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/validateUserAgent.xhtml">validateUserAgent</a>()
+                    </li><li>private bool <a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/verifySignature.xhtml">verifySignature</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Implements</h4>
+          <ul>
+            <li>
+              <a title="serve\deployment\webhooks\WebhookInterface" href="../interfaces/serve_deployment_webhooks_WebhookInterface.xhtml">serve\deployment\webhooks\WebhookInterface</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="event"><strong>$event</strong>
+                —
+                string<br/><span class="indent">Incoming Git event type.</span></li>
+            <li id="payload"><strong>$payload</strong>
+                —
+                array<br/><span class="indent">Incoming GitHub payload.</span></li>
+            <li id="request"><strong>$request</strong>
+                —
+                <a title="\serve\http\request\Request" href="../classes/_serve_http_request_Request.xhtml">\serve\http\request\Request</a><br/><span class="indent">Request object.</span></li>
+            <li id="response"><strong>$response</strong>
+                —
+                <a title="\serve\http\response\Response" href="../classes/_serve_http_response_Response.xhtml">\serve\http\response\Response</a><br/><span class="indent">Response object.</span></li>
+            <li id="secret"><strong>$secret</strong>
+                —
+                string<br/><span class="indent">Github provided secret.</span></li>
+            <li id="shell"><strong>$shell</strong>
+                —
+                <a title="\serve\shell\Shell" href="../classes/_serve_shell_Shell.xhtml">\serve\shell\Shell</a><br/><span class="indent">Shell utility.</span></li>
+          </ul>
+          <h4>public</h4>
+          <ul class="members">
+            <li id="_fileIn"><strong>$_fileIn</strong>
+                —
+                string<br/><span class="indent">Incoming file to read.</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="gitPull"><a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/gitPull.xhtml">gitPull()</a>
+                — Update repo via git.</li>
+            <li id="headersExist"><a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/headersExist.xhtml">headersExist()</a>
+                — Validate the proper headers exist.</li>
+            <li id="payloadExists"><a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/payloadExists.xhtml">payloadExists()</a>
+                — Validate a payload exists.</li>
+            <li id="validateUserAgent"><a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/validateUserAgent.xhtml">validateUserAgent()</a>
+                — Validate the user agent is from Github.</li>
+            <li id="verifySignature"><a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/verifySignature.xhtml">verifySignature()</a>
+                — Validate the github signature and decode the payload.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/__construct.xhtml">__construct()</a>
+                — Constructor.</li>
+            <li id="deploy"><a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/deploy.xhtml">deploy()</a>
+                — {@inheritDoc}</li>
+            <li id="event"><a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/event.xhtml">event()</a>
+                — {@inheritDoc}</li>
+            <li id="payload"><a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/payload.xhtml">payload()</a>
+                — {@inheritDoc}</li>
+            <li id="validate"><a title="serve\deployment\webhooks\Github" href="../classes/serve_deployment_webhooks_Github/validate.xhtml">validate()</a>
+                — {@inheritDoc}</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2022 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

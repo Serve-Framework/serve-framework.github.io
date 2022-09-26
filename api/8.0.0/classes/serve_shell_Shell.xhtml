@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - serve\shell\Shell</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#serve_shell">serve\shell</a>
+          </li>
+          <li class="separator">Shell</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/serve/shell/Shell.php.xhtml#line29">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>serve\shell\</small>Shell</h1>
+        <h4>Shell interface utility class.</h4>
+        <p/>
+        <ul>
+          <li>Author: Joe J. Howard</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Shell
+            {<br/><ul class="none"><li>// members</li><li>private array <a href="#members">$built_ins</a> =
+                        ;
+                    </li><li>private array <a href="#members">$options</a> =
+                        ;
+                    </li><li>private array <a href="#members">$params</a> =
+                        ;
+                    </li><li>private <span title="serve\shell\string|null">string|null</span> <a href="#members">$subCmd</a> =
+                        NULL;
+                    </li><li>private <span title="serve\shell\string|null">string|null</span> <a href="#members">$cmd</a> =
+                        NULL;
+                    </li><li>private <span title="serve\shell\string|null">string|null</span> <a href="#members">$dir</a> =
+                        NULL;
+                    </li><li>private integer <a href="#members">$timeout</a> =
+                        10;
+                    </li><li>private <span title="\serve\shell\Process">Process</span> <a href="#members">$process</a>;
+                    </li><li>private <span title="serve\shell\string|null">string|null</span> <a href="#members">$_I</a>;
+                    </li><li>private <span title="serve\shell\string|null">string|null</span> <a href="#members">$_O</a>;
+                    </li><li>private <span title="serve\shell\bool">bool</span> <a href="#members">$result</a> =
+                        false;
+                    </li><li>private string <a href="#members">$defaultMemory</a> =
+                        '1024M';
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="serve\shell\Shell" href="../classes/serve_shell_Shell/__construct.xhtml">__construct</a>()
+                    </li><li>public Shell <a title="serve\shell\Shell" href="../classes/serve_shell_Shell/setTimeout.xhtml">setTimeout</a>()
+                    </li><li>public <span title="Shell">Shell</span> <a title="serve\shell\Shell" href="../classes/serve_shell_Shell/cd.xhtml">cd</a>()
+                    </li><li>public <span title="Shell">Shell</span> <a title="serve\shell\Shell" href="../classes/serve_shell_Shell/cmd.xhtml">cmd</a>()
+                    </li><li>public <span title="Shell">Shell</span> <a title="serve\shell\Shell" href="../classes/serve_shell_Shell/option.xhtml">option</a>()
+                    </li><li>public <span title="Shell">Shell</span> <a title="serve\shell\Shell" href="../classes/serve_shell_Shell/options.xhtml">options</a>()
+                    </li><li>public <span title="Shell">Shell</span> <a title="serve\shell\Shell" href="../classes/serve_shell_Shell/param.xhtml">param</a>()
+                    </li><li>public <span title="Shell">Shell</span> <a title="serve\shell\Shell" href="../classes/serve_shell_Shell/params.xhtml">params</a>()
+                    </li><li>public <span title="Shell">Shell</span> <a title="serve\shell\Shell" href="../classes/serve_shell_Shell/input.xhtml">input</a>()
+                    </li><li>public <span title="Shell">Shell</span> <a title="serve\shell\Shell" href="../classes/serve_shell_Shell/output.xhtml">output</a>()
+                    </li><li>public mixed <a title="serve\shell\Shell" href="../classes/serve_shell_Shell/run.xhtml">run</a>()
+                    </li><li>public bool <a title="serve\shell\Shell" href="../classes/serve_shell_Shell/is_successful.xhtml">is_successful</a>()
+                    </li><li>public void <a title="serve\shell\Shell" href="../classes/serve_shell_Shell/reset.xhtml">reset</a>()
+                    </li><li>private string <a title="serve\shell\Shell" href="../classes/serve_shell_Shell/resolveBins.xhtml">resolveBins</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="_I"><strong>$_I</strong>
+                —
+                <a title="serve\shell\string|null" href="../classes/serve_shell_string|null.xhtml">serve\shell\string|null</a><br/><span class="indent">Input stream.</span></li>
+            <li id="_O"><strong>$_O</strong>
+                —
+                <a title="serve\shell\string|null" href="../classes/serve_shell_string|null.xhtml">serve\shell\string|null</a><br/><span class="indent">Output stream.</span></li>
+            <li id="built_ins"><strong>$built_ins</strong>
+                —
+                array<br/><span class="indent">Built in linux commands.</span></li>
+            <li id="cmd"><strong>$cmd</strong>
+                —
+                <a title="serve\shell\string|null" href="../classes/serve_shell_string|null.xhtml">serve\shell\string|null</a><br/><span class="indent">The actual cmd to run.</span></li>
+            <li id="defaultMemory"><strong>$defaultMemory</strong>
+                —
+                string<br/><span class="indent">Default available system memory.</span></li>
+            <li id="dir"><strong>$dir</strong>
+                —
+                <a title="serve\shell\string|null" href="../classes/serve_shell_string|null.xhtml">serve\shell\string|null</a><br/><span class="indent">The directory to run the cmd in.</span></li>
+            <li id="options"><strong>$options</strong>
+                —
+                array<br/><span class="indent">Flagged options to use.</span></li>
+            <li id="params"><strong>$params</strong>
+                —
+                array<br/><span class="indent">Quoted params to use.</span></li>
+            <li id="process"><strong>$process</strong>
+                —
+                <a title="\serve\shell\Process" href="../classes/_serve_shell_Process.xhtml">\serve\shell\Process</a><br/><span class="indent">Process.</span></li>
+            <li id="result"><strong>$result</strong>
+                —
+                <a title="serve\shell\bool" href="../classes/serve_shell_bool.xhtml">serve\shell\bool</a><br/><span class="indent">Result from the command.</span></li>
+            <li id="subCmd"><strong>$subCmd</strong>
+                —
+                <a title="serve\shell\string|null" href="../classes/serve_shell_string|null.xhtml">serve\shell\string|null</a><br/><span class="indent">Sub command to run.</span></li>
+            <li id="timeout"><strong>$timeout</strong>
+                —
+                int<br/><span class="indent">Default timeout in seconds.</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="resolveBins"><a title="serve\shell\Shell" href="../classes/serve_shell_Shell/resolveBins.xhtml">resolveBins()</a>
+                — Makes sure than the binary for the cmd being run exists.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="serve\shell\Shell" href="../classes/serve_shell_Shell/__construct.xhtml">__construct()</a>
+                — Constructor.</li>
+            <li id="cd"><a title="serve\shell\Shell" href="../classes/serve_shell_Shell/cd.xhtml">cd()</a>
+                — Cd into a directory.</li>
+            <li id="cmd"><a title="serve\shell\Shell" href="../classes/serve_shell_Shell/cmd.xhtml">cmd()</a>
+                — Run a command and optional sub command.</li>
+            <li id="input"><a title="serve\shell\Shell" href="../classes/serve_shell_Shell/input.xhtml">input()</a>
+                — Add an input argument to the command.</li>
+            <li id="is_successful"><a title="serve\shell\Shell" href="../classes/serve_shell_Shell/is_successful.xhtml">is_successful()</a>
+                — Was the command successful?</li>
+            <li id="option"><a title="serve\shell\Shell" href="../classes/serve_shell_Shell/option.xhtml">option()</a>
+                — Add an option or flag to the current command.</li>
+            <li id="options"><a title="serve\shell\Shell" href="../classes/serve_shell_Shell/options.xhtml">options()</a>
+                — Add an array of flags and options.</li>
+            <li id="output"><a title="serve\shell\Shell" href="../classes/serve_shell_Shell/output.xhtml">output()</a>
+                — Add an output argument to the command.</li>
+            <li id="param"><a title="serve\shell\Shell" href="../classes/serve_shell_Shell/param.xhtml">param()</a>
+                — Add parameter to the current command.</li>
+            <li id="params"><a title="serve\shell\Shell" href="../classes/serve_shell_Shell/params.xhtml">params()</a>
+                — Add an array of parameters to the current command.</li>
+            <li id="reset"><a title="serve\shell\Shell" href="../classes/serve_shell_Shell/reset.xhtml">reset()</a>
+                — Reset the shell.</li>
+            <li id="run"><a title="serve\shell\Shell" href="../classes/serve_shell_Shell/run.xhtml">run()</a>
+                — Run the command.</li>
+            <li id="setTimeout"><a title="serve\shell\Shell" href="../classes/serve_shell_Shell/setTimeout.xhtml">setTimeout()</a>
+                — Cd into a directory.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2022 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

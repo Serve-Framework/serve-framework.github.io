@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - serve\validator\Validator</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#serve_validator">serve\validator</a>
+          </li>
+          <li class="separator">Validator</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/serve/validator/Validator.php.xhtml#line71">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>serve\validator\</small>Validator</h1>
+        <h4>Input validation.</h4>
+        <p/>
+        <ul>
+          <li>Author: Joe J. Howard</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Validator
+            {<br/><ul class="none"><li>// members</li><li>private  <a href="#members">$input</a>;
+                    </li><li>private  <a href="#members">$ruleSets</a>;
+                    </li><li>private  <a href="#members">$filterSets</a>;
+                    </li><li>private <span title="\serve\ioc\Container">Container</span> <a href="#members">$container</a>;
+                    </li><li>private array <a href="#members">$rules</a> =
+                        ;
+                    </li><li>private array <a href="#members">$filters</a> =
+                        ;
+                    </li><li>private  <a href="#members">$originalFieldNames</a>;
+                    </li><li>private <span title="serve\validator\bool">bool</span> <a href="#members">$isValid</a> =
+                        true;
+                    </li><li>private array <a href="#members">$errors</a> =
+                        ;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/__construct.xhtml">__construct</a>()
+                    </li><li>public bool <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/isValid.xhtml">isValid</a>()
+                    </li><li>public bool <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/isInvalid.xhtml">isInvalid</a>()
+                    </li><li>public array <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/getErrors.xhtml">getErrors</a>()
+                    </li><li>public array <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/filter.xhtml">filter</a>()
+                    </li><li>private mixed <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/applyFilter.xhtml">applyFilter</a>()
+                    </li><li>private <span title="FilterInterface">FilterInterface</span> <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/filterFactory.xhtml">filterFactory</a>()
+                    </li><li>private string <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/getFilterClassName.xhtml">getFilterClassName</a>()
+                    </li><li>private void <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/saveOriginalFieldNames.xhtml">saveOriginalFieldNames</a>()
+                    </li><li>private string <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/getOriginalFieldName.xhtml">getOriginalFieldName</a>()
+                    </li><li>private  <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/parseRule.xhtml">parseRule</a>()
+                    </li><li>private array <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/parseRuleParams.xhtml">parseRuleParams</a>()
+                    </li><li>private string <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/getRuleClassName.xhtml">getRuleClassName</a>()
+                    </li><li>private <span title="RuleInterface">RuleInterface</span> <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/ruleFactory.xhtml">ruleFactory</a>()
+                    </li><li>private bool <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/isInputFieldEmpty.xhtml">isInputFieldEmpty</a>()
+                    </li><li>private string <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/getErrorMessage.xhtml">getErrorMessage</a>()
+                    </li><li>private bool <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/validate.xhtml">validate</a>()
+                    </li><li>private array <a title="serve\validator\Validator" href="../classes/serve_validator_Validator/process.xhtml">process</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="container"><strong>$container</strong>
+                —
+                <a title="\serve\ioc\Container" href="../classes/_serve_ioc_Container.xhtml">\serve\ioc\Container</a><br/><span class="indent">Container.</span></li>
+            <li id="errors"><strong>$errors</strong>
+                —
+                array<br/><span class="indent">Error messages.</span></li>
+            <li id="filterSets"><strong>$filterSets</strong>
+                —
+                array<br/><span class="indent">Filter sets.</span></li>
+            <li id="filters"><strong>$filters</strong>
+                —
+                array<br/><span class="indent">Filters.</span></li>
+            <li id="input"><strong>$input</strong>
+                —
+                array<br/><span class="indent">Input.</span></li>
+            <li id="isValid"><strong>$isValid</strong>
+                —
+                <a title="serve\validator\bool" href="../classes/serve_validator_bool.xhtml">serve\validator\bool</a><br/><span class="indent">Is the input valid?</span></li>
+            <li id="originalFieldNames"><strong>$originalFieldNames</strong>
+                —
+                array<br/><span class="indent">Original field names.</span></li>
+            <li id="ruleSets"><strong>$ruleSets</strong>
+                —
+                array<br/><span class="indent">Rule sets.</span></li>
+            <li id="rules"><strong>$rules</strong>
+                —
+                array<br/><span class="indent">Rules.</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="applyFilter"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/applyFilter.xhtml">applyFilter()</a>
+                — Filters the input.</li>
+            <li id="filterFactory"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/filterFactory.xhtml">filterFactory()</a>
+                — Creates a filter instance.</li>
+            <li id="getErrorMessage"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/getErrorMessage.xhtml">getErrorMessage()</a>
+                — Returns the error message.</li>
+            <li id="getFilterClassName"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/getFilterClassName.xhtml">getFilterClassName()</a>
+                — Returns the filter class name.</li>
+            <li id="getOriginalFieldName"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/getOriginalFieldName.xhtml">getOriginalFieldName()</a>
+                — Returns the original field name.</li>
+            <li id="getRuleClassName"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/getRuleClassName.xhtml">getRuleClassName()</a>
+                — Returns the rule class name.</li>
+            <li id="isInputFieldEmpty"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/isInputFieldEmpty.xhtml">isInputFieldEmpty()</a>
+                — Returns true if the input field is considered empty and false if not.</li>
+            <li id="parseRule"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/parseRule.xhtml">parseRule()</a>
+                — Parses the rule.</li>
+            <li id="parseRuleParams"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/parseRuleParams.xhtml">parseRuleParams()</a>
+                — Parses the rule parameters.</li>
+            <li id="process"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/process.xhtml">process()</a>
+                — Processes all validation rules and returns an array containing the validation status and potential error messages.</li>
+            <li id="ruleFactory"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/ruleFactory.xhtml">ruleFactory()</a>
+                — Creates a rule instance.</li>
+            <li id="saveOriginalFieldNames"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/saveOriginalFieldNames.xhtml">saveOriginalFieldNames()</a>
+                — Saves original field name along with the expanded field name.</li>
+            <li id="validate"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/validate.xhtml">validate()</a>
+                — Validates the field using the specified rule.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/__construct.xhtml">__construct()</a>
+                — Constructor.</li>
+            <li id="filter"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/filter.xhtml">filter()</a>
+                — Filters the input.</li>
+            <li id="getErrors"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/getErrors.xhtml">getErrors()</a>
+                — Returns the validation errors.</li>
+            <li id="isInvalid"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/isInvalid.xhtml">isInvalid()</a>
+                — Returns false if all rules passed and true if validation failed.</li>
+            <li id="isValid"><a title="serve\validator\Validator" href="../classes/serve_validator_Validator/isValid.xhtml">isValid()</a>
+                — Returns true if all rules passed and false if validation failed.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2022 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

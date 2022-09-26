@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - serve\pixl\processor\GD</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#serve_pixl_processor">serve\pixl\processor</a>
+          </li>
+          <li class="separator">GD</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/serve/pixl/processor/GD.php.xhtml#line34">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>serve\pixl\processor\</small>GD</h1>
+        <h4>GD image manager.</h4>
+        <p/>
+        <ul>
+          <li>Author: Joe J. Howard</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class GD
+                implements
+                <a title="serve\pixl\processor\ProcessorInterface" href="../interfaces/serve_pixl_processor_ProcessorInterface.xhtml">ProcessorInterface</a>
+            {<br/><ul class="none"><li>// members</li><li>private integer <a href="#members">$quality_jpg</a> =
+                        75;
+                    </li><li>private integer <a href="#members">$quality_png</a> =
+                        0;
+                    </li><li>private <span title="serve\pixl\processor\int|null">int|null</span> <a href="#members">$source_type</a>;
+                    </li><li>private <span title="serve\pixl\processor\resource|null">resource|null</span> <a href="#members">$source_image</a>;
+                    </li><li>private <span title="serve\pixl\processor\resource|null">resource|null</span> <a href="#members">$dest_image</a>;
+                    </li><li>private <span title="serve\pixl\processor\int|null">int|null</span> <a href="#members">$source_w</a>;
+                    </li><li>private <span title="serve\pixl\processor\int|null">int|null</span> <a href="#members">$source_h</a>;
+                    </li><li>private <span title="serve\pixl\processor\int|null">int|null</span> <a href="#members">$source_x</a>;
+                    </li><li>private <span title="serve\pixl\processor\int|null">int|null</span> <a href="#members">$source_y</a>;
+                    </li><li>private integer <a href="#members">$dest_x</a> =
+                        0;
+                    </li><li>private integer <a href="#members">$dest_y</a> =
+                        0;
+                    </li><li>private <span title="serve\pixl\processor\int|null">int|null</span> <a href="#members">$dest_w</a>;
+                    </li><li>private <span title="serve\pixl\processor\int|null">int|null</span> <a href="#members">$dest_h</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/__construct.xhtml">__construct</a>()
+                    </li><li>public void <a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/load.xhtml">load</a>()
+                    </li><li>public int <a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/width.xhtml">width</a>()
+                    </li><li>public int <a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/height.xhtml">height</a>()
+                    </li><li>public void <a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/save.xhtml">save</a>()
+                    </li><li>public void <a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/resizeToHeight.xhtml">resizeToHeight</a>()
+                    </li><li>public void <a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/resizeToWidth.xhtml">resizeToWidth</a>()
+                    </li><li>public void <a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/scale.xhtml">scale</a>()
+                    </li><li>public void <a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/resize.xhtml">resize</a>()
+                    </li><li>public void <a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/crop.xhtml">crop</a>()
+                    </li><li>public void <a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/addBackground.xhtml">addBackground</a>()
+                    </li><li>private void <a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/reset.xhtml">reset</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Implements</h4>
+          <ul>
+            <li>
+              <a title="serve\pixl\processor\ProcessorInterface" href="../interfaces/serve_pixl_processor_ProcessorInterface.xhtml">serve\pixl\processor\ProcessorInterface</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="dest_h"><strong>$dest_h</strong>
+                —
+                <a title="serve\pixl\processor\int|null" href="../classes/serve_pixl_processor_int|null.xhtml">serve\pixl\processor\int|null</a><br/><span class="indent">Destination height in px.</span></li>
+            <li id="dest_image"><strong>$dest_image</strong>
+                —
+                <a title="serve\pixl\processor\resource|null" href="../classes/serve_pixl_processor_resource|null.xhtml">serve\pixl\processor\resource|null</a><br/><span class="indent">Image destination resource.</span></li>
+            <li id="dest_w"><strong>$dest_w</strong>
+                —
+                <a title="serve\pixl\processor\int|null" href="../classes/serve_pixl_processor_int|null.xhtml">serve\pixl\processor\int|null</a><br/><span class="indent">Destination width in px.</span></li>
+            <li id="dest_x"><strong>$dest_x</strong>
+                —
+                int<br/><span class="indent">Destination x-axis crop position in px.</span></li>
+            <li id="dest_y"><strong>$dest_y</strong>
+                —
+                int<br/><span class="indent">Destination y-axis crop position in px.</span></li>
+            <li id="quality_jpg"><strong>$quality_jpg</strong>
+                —
+                int<br/><span class="indent">Default jpg quality.</span></li>
+            <li id="quality_png"><strong>$quality_png</strong>
+                —
+                int<br/><span class="indent">Default jpg quality.</span></li>
+            <li id="source_h"><strong>$source_h</strong>
+                —
+                <a title="serve\pixl\processor\int|null" href="../classes/serve_pixl_processor_int|null.xhtml">serve\pixl\processor\int|null</a><br/><span class="indent">Original height in px.</span></li>
+            <li id="source_image"><strong>$source_image</strong>
+                —
+                <a title="serve\pixl\processor\resource|null" href="../classes/serve_pixl_processor_resource|null.xhtml">serve\pixl\processor\resource|null</a><br/><span class="indent">Image source resource.</span></li>
+            <li id="source_type"><strong>$source_type</strong>
+                —
+                <a title="serve\pixl\processor\int|null" href="../classes/serve_pixl_processor_int|null.xhtml">serve\pixl\processor\int|null</a><br/><span class="indent">Image source type.</span></li>
+            <li id="source_w"><strong>$source_w</strong>
+                —
+                <a title="serve\pixl\processor\int|null" href="../classes/serve_pixl_processor_int|null.xhtml">serve\pixl\processor\int|null</a><br/><span class="indent">Original width in px.</span></li>
+            <li id="source_x"><strong>$source_x</strong>
+                —
+                <a title="serve\pixl\processor\int|null" href="../classes/serve_pixl_processor_int|null.xhtml">serve\pixl\processor\int|null</a><br/><span class="indent">Source x-axis crop position in px.</span></li>
+            <li id="source_y"><strong>$source_y</strong>
+                —
+                <a title="serve\pixl\processor\int|null" href="../classes/serve_pixl_processor_int|null.xhtml">serve\pixl\processor\int|null</a><br/><span class="indent">Source y-axis crop position in px.</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="reset"><a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/reset.xhtml">reset()</a>
+                — Reset defaults after saving.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/__construct.xhtml">__construct()</a>
+                — Constructor.</li>
+            <li id="addBackground"><a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/addBackground.xhtml">addBackground()</a>
+                — {@inheritDoc}</li>
+            <li id="crop"><a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/crop.xhtml">crop()</a>
+                — {@inheritDoc}</li>
+            <li id="height"><a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/height.xhtml">height()</a>
+                — {@inheritDoc}</li>
+            <li id="load"><a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/load.xhtml">load()</a>
+                — {@inheritDoc}</li>
+            <li id="resize"><a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/resize.xhtml">resize()</a>
+                — {@inheritDoc}</li>
+            <li id="resizeToHeight"><a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/resizeToHeight.xhtml">resizeToHeight()</a>
+                — {@inheritDoc}</li>
+            <li id="resizeToWidth"><a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/resizeToWidth.xhtml">resizeToWidth()</a>
+                — {@inheritDoc}</li>
+            <li id="save"><a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/save.xhtml">save()</a>
+                — {@inheritDoc}</li>
+            <li id="scale"><a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/scale.xhtml">scale()</a>
+                — {@inheritDoc}</li>
+            <li id="width"><a title="serve\pixl\processor\GD" href="../classes/serve_pixl_processor_GD/width.xhtml">width()</a>
+                — {@inheritDoc}</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2022 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

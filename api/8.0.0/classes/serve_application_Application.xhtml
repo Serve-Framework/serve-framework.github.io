@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - serve\application\Application</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#serve_application">serve\application</a>
+          </li>
+          <li class="separator">Application</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/serve/application/Application.php.xhtml#line31">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>serve\application\</small>Application</h1>
+        <h4>Serve framework main class file.</h4>
+        <p/>
+        <ul>
+          <li>Author: Joe J. Howard</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Application
+                extends <a title="serve\Serve" href="../classes/serve_Serve.xhtml">Serve</a>
+            {<br/><ul class="none"><li>// Inherited constants from <a title="serve\Serve" href="../classes/serve_Serve.xhtml">Serve</a></li><li>const <a href="#VERSION">VERSION</a> = '9.0.0';</li><li>const <a href="#VERSION_MAJOR">VERSION_MAJOR</a> = 9;</li><li>const <a href="#VERSION_MINOR">VERSION_MINOR</a> = 0;</li><li>const <a href="#VERSION_PATCH">VERSION_PATCH</a> = 0;</li></ul><ul class="none"><li>// members</li><li>protected static <span title="\serve\application\Application">Application</span> <a href="#members">$instance</a>;
+                    </li><li>protected  <a href="#members">$startTime</a>;
+                    </li><li>protected <span title="\serve\ioc\Container">Container</span> <a href="#members">$container</a>;
+                    </li><li>protected  <a href="#members">$applicationPath</a>;
+                    </li><li>protected array <a href="#members">$packages</a> =
+                        ;
+                    </li></ul><ul class="none"><li>// methods</li><li>protected final void <a title="serve\application\Application" href="../classes/serve_application_Application/__construct.xhtml">__construct</a>()
+                    </li><li>public static <span title="Application">Application</span> <a title="serve\application\Application" href="../classes/serve_application_Application/start.xhtml">start</a>()
+                    </li><li>public static <span title="Application">Application</span> <a title="serve\application\Application" href="../classes/serve_application_Application/instance.xhtml">instance</a>()
+                    </li><li>public <span title="Container">Container</span> <a title="serve\application\Application" href="../classes/serve_application_Application/container.xhtml">container</a>()
+                    </li><li>public ?string <a title="serve\application\Application" href="../classes/serve_application_Application/environment.xhtml">environment</a>()
+                    </li><li>protected $this <a title="serve\application\Application" href="../classes/serve_application_Application/boot.xhtml">boot</a>()
+                    </li><li>protected void <a title="serve\application\Application" href="../classes/serve_application_Application/initialize.xhtml">initialize</a>()
+                    </li><li>protected void <a title="serve\application\Application" href="../classes/serve_application_Application/bootstrap.xhtml">bootstrap</a>()
+                    </li><li>protected void <a title="serve\application\Application" href="../classes/serve_application_Application/registerContainer.xhtml">registerContainer</a>()
+                    </li><li>protected void <a title="serve\application\Application" href="../classes/serve_application_Application/registerFilesystem.xhtml">registerFilesystem</a>()
+                    </li><li>protected void <a title="serve\application\Application" href="../classes/serve_application_Application/registerConfig.xhtml">registerConfig</a>()
+                    </li><li>protected void <a title="serve\application\Application" href="../classes/serve_application_Application/configure.xhtml">configure</a>()
+                    </li><li>protected <span title="Config">Config</span> <a title="serve\application\Application" href="../classes/serve_application_Application/configFactory.xhtml">configFactory</a>()
+                    </li><li>protected string <a title="serve\application\Application" href="../classes/serve_application_Application/configurationPath.xhtml">configurationPath</a>()
+                    </li><li>public bool <a title="serve\application\Application" href="../classes/serve_application_Application/isCommandLine.xhtml">isCommandLine</a>()
+                    </li><li>protected void <a title="serve\application\Application" href="../classes/serve_application_Application/registerServices.xhtml">registerServices</a>()
+                    </li><li>protected void <a title="serve\application\Application" href="../classes/serve_application_Application/registerWebServices.xhtml">registerWebServices</a>()
+                    </li><li>protected void <a title="serve\application\Application" href="../classes/serve_application_Application/registerClisServices.xhtml">registerClisServices</a>()
+                    </li><li>protected void <a title="serve\application\Application" href="../classes/serve_application_Application/registerPackage.xhtml">registerPackage</a>()
+                    </li><li>protected void <a title="serve\application\Application" href="../classes/serve_application_Application/registerService.xhtml">registerService</a>()
+                    </li><li>public abstract void <a title="serve\application\Application" href="../classes/serve_application_Application/run.xhtml">run</a>()
+                    </li></ul><ul class="none"><li>// Inherited methods from <span title="serve\ioc\ContainerAwareTrait">ContainerAwareTrait</span></li><li>public Container <a title="serve\ioc\ContainerAwareTrait" href="../traits/serve_ioc_ContainerAwareTrait/container.xhtml">container</a>()
+                        </li><li>public mixed <a title="serve\ioc\ContainerAwareTrait" href="../traits/serve_ioc_ContainerAwareTrait/__get.xhtml">__get</a>()
+                        </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>
+              <a title="serve\Serve" href="../classes/serve_Serve.xhtml">serve\Serve</a>
+            </li>
+          </ul>
+          <h4>Uses</h4>
+          <ul>
+            <li>
+              <a title="serve\ioc\ContainerAwareTrait" href="../traits/serve_ioc_ContainerAwareTrait.xhtml">serve\ioc\ContainerAwareTrait</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="VERSION">VERSION</td>
+              <td>'9.0.0'</td>
+            </tr>
+            <tr>
+              <td id="VERSION_MAJOR">VERSION_MAJOR</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td id="VERSION_MINOR">VERSION_MINOR</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td id="VERSION_PATCH">VERSION_PATCH</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="applicationPath"><strong>$applicationPath</strong>
+                —
+                string<br/><span class="indent">Application path.</span></li>
+            <li id="container"><strong>$container</strong>
+                —
+                <a title="\serve\ioc\Container" href="../classes/_serve_ioc_Container.xhtml">\serve\ioc\Container</a><br/><span class="indent">IoC container instance.</span></li>
+            <li id="container"><strong>$container</strong>
+                —
+                <a title="\serve\ioc\Container" href="../classes/_serve_ioc_Container.xhtml">\serve\ioc\Container</a><br/><span class="indent">IoC container instance.</span></li>
+            <li id="instance"><strong>$instance</strong>
+                —
+                <a title="\serve\application\Application" href="../classes/_serve_application_Application.xhtml">\serve\application\Application</a><br/><span class="indent">Singleton instance of self.</span></li>
+            <li id="packages"><strong>$packages</strong>
+                —
+                array<br/><span class="indent">Booted packages.</span></li>
+            <li id="startTime"><strong>$startTime</strong>
+                —
+                float<br/><span class="indent">Application start time.</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>protected</h4>
+          <ul>
+            <li id="__construct"><a title="serve\application\Application" href="../classes/serve_application_Application/__construct.xhtml">__construct()</a>
+                — Constructor.</li>
+            <li id="boot"><a title="serve\application\Application" href="../classes/serve_application_Application/boot.xhtml">boot()</a>
+                — Boot the application dependencies.</li>
+            <li id="bootstrap"><a title="serve\application\Application" href="../classes/serve_application_Application/bootstrap.xhtml">bootstrap()</a>
+                — Loads the application bootstrap file.</li>
+            <li id="configFactory"><a title="serve\application\Application" href="../classes/serve_application_Application/configFactory.xhtml">configFactory()</a>
+                — Builds a configuration instance.</li>
+            <li id="configurationPath"><a title="serve\application\Application" href="../classes/serve_application_Application/configurationPath.xhtml">configurationPath()</a>
+                — Returns the configuration path.</li>
+            <li id="configure"><a title="serve\application\Application" href="../classes/serve_application_Application/configure.xhtml">configure()</a>
+                — Configure application basics.</li>
+            <li id="initialize"><a title="serve\application\Application" href="../classes/serve_application_Application/initialize.xhtml">initialize()</a>
+                — Sets up the framework core.</li>
+            <li id="registerClisServices"><a title="serve\application\Application" href="../classes/serve_application_Application/registerClisServices.xhtml">registerClisServices()</a>
+                — Register cli services.</li>
+            <li id="registerConfig"><a title="serve\application\Application" href="../classes/serve_application_Application/registerConfig.xhtml">registerConfig()</a>
+                — Register the config.</li>
+            <li id="registerContainer"><a title="serve\application\Application" href="../classes/serve_application_Application/registerContainer.xhtml">registerContainer()</a>
+                — Register the IOC container.</li>
+            <li id="registerFilesystem"><a title="serve\application\Application" href="../classes/serve_application_Application/registerFilesystem.xhtml">registerFilesystem()</a>
+                — Register the Filesystem.</li>
+            <li id="registerPackage"><a title="serve\application\Application" href="../classes/serve_application_Application/registerPackage.xhtml">registerPackage()</a>
+                — Registers services in the IoC container.</li>
+            <li id="registerService"><a title="serve\application\Application" href="../classes/serve_application_Application/registerService.xhtml">registerService()</a>
+                — Registers services in the IoC container.</li>
+            <li id="registerServices"><a title="serve\application\Application" href="../classes/serve_application_Application/registerServices.xhtml">registerServices()</a>
+                — Register required services.</li>
+            <li id="registerWebServices"><a title="serve\application\Application" href="../classes/serve_application_Application/registerWebServices.xhtml">registerWebServices()</a>
+                — Register default services.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="container"><a title="serve\application\Application" href="../classes/serve_application_Application/container.xhtml">container()</a>
+                — Returns the IOC container.</li>
+            <li id="environment"><a title="serve\application\Application" href="../classes/serve_application_Application/environment.xhtml">environment()</a>
+                — Returns the Serve environment.</li>
+            <li id="instance"><a title="serve\application\Application" href="../classes/serve_application_Application/instance.xhtml">instance()</a>
+                — Returns the application instance if it has been instantiated.</li>
+            <li id="isCommandLine"><a title="serve\application\Application" href="../classes/serve_application_Application/isCommandLine.xhtml">isCommandLine()</a>
+                — Is the application running in the CLI?</li>
+            <li id="run"><a title="serve\application\Application" href="../classes/serve_application_Application/run.xhtml">run()</a>
+                — Runs the application.</li>
+            <li id="start"><a title="serve\application\Application" href="../classes/serve_application_Application/start.xhtml">start()</a>
+                — Starts the application and returns a singleton instance of the application.</li>
+          </ul>
+          <h3>Inherited from <a title="serve\ioc\ContainerAwareTrait" href="../traits/serve_ioc_ContainerAwareTrait.xhtml">serve\ioc\ContainerAwareTrait</a></h3>
+          <h4>public</h4>
+          <ul>
+            <li id="__get"><a title="serve\ioc\ContainerAwareTrait" href="../traits/serve_ioc_ContainerAwareTrait/__get.xhtml">__get()</a>
+                — Resolves item from the container using overloading.</li>
+            <li id="container"><a title="serve\ioc\ContainerAwareTrait" href="../traits/serve_ioc_ContainerAwareTrait/container.xhtml">container()</a>
+                — Sets and or gets the container.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2022 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

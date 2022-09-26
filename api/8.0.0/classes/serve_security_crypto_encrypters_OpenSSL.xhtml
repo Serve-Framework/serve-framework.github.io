@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - serve\security\crypto\encrypters\OpenSSL</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#serve_security_crypto_encrypters">serve\security\crypto\encrypters</a>
+          </li>
+          <li class="separator">OpenSSL</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/serve/security/crypto/encrypters/OpenSSL.php.xhtml#line28">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>serve\security\crypto\encrypters\</small>OpenSSL</h1>
+        <h4>Encryption/Decryption interface.</h4>
+        <p/>
+        <ul>
+          <li>Author: Joe J. Howard</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class OpenSSL
+                extends <a title="serve\security\crypto\encrypters\Encrypter" href="../classes/serve_security_crypto_encrypters_Encrypter.xhtml">Encrypter</a>
+                implements
+                <a title="serve\security\crypto\encrypters\EncrypterInterface" href="../interfaces/serve_security_crypto_encrypters_EncrypterInterface.xhtml">EncrypterInterface</a>
+            {<br/><ul class="none"><li>// Inherited constants from <a title="serve\security\crypto\encrypters\Encrypter" href="../classes/serve_security_crypto_encrypters_Encrypter.xhtml">Encrypter</a></li><li>const <a href="#DERIVATION_HASH">DERIVATION_HASH</a> = 'sha256';</li><li>const <a href="#DERIVATION_ITERATIONS">DERIVATION_ITERATIONS</a> = 1024;</li></ul><ul class="none"><li>// members</li><li>protected  <a href="#members">$key</a>;
+                    </li><li>protected  <a href="#members">$cipher</a>;
+                    </li><li>protected  <a href="#members">$ivSize</a>;
+                    </li><li>protected  <a href="#members">$ciphers</a>;
+                    </li><li>protected array <a href="#members">$nonCyphers</a> =
+                        ;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="serve\security\crypto\encrypters\OpenSSL" href="../classes/serve_security_crypto_encrypters_OpenSSL/__construct.xhtml">__construct</a>()
+                    </li><li>private void <a title="serve\security\crypto\encrypters\OpenSSL" href="../classes/serve_security_crypto_encrypters_OpenSSL/loadCyphers.xhtml">loadCyphers</a>()
+                    </li><li>public string <a title="serve\security\crypto\encrypters\OpenSSL" href="../classes/serve_security_crypto_encrypters_OpenSSL/encrypt.xhtml">encrypt</a>()
+                    </li><li>public void <a title="serve\security\crypto\encrypters\OpenSSL" href="../classes/serve_security_crypto_encrypters_OpenSSL/decrypt.xhtml">decrypt</a>()
+                    </li></ul><ul class="none"><li>// Inherited methods from <span title="serve\security\crypto\encrypters\Encrypter">Encrypter</span></li><li>protected string <a title="serve\security\crypto\encrypters\Encrypter" href="../classes/serve_security_crypto_encrypters_Encrypter/deriveKey.xhtml">deriveKey</a>()
+                        </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>
+              <a title="serve\security\crypto\encrypters\Encrypter" href="../classes/serve_security_crypto_encrypters_Encrypter.xhtml">serve\security\crypto\encrypters\Encrypter</a>
+            </li>
+          </ul>
+          <h4>Implements</h4>
+          <ul>
+            <li>
+              <a title="serve\security\crypto\encrypters\EncrypterInterface" href="../interfaces/serve_security_crypto_encrypters_EncrypterInterface.xhtml">serve\security\crypto\encrypters\EncrypterInterface</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="DERIVATION_HASH">DERIVATION_HASH</td>
+              <td>'sha256'</td>
+            </tr>
+            <tr>
+              <td id="DERIVATION_ITERATIONS">DERIVATION_ITERATIONS</td>
+              <td>1024</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="cipher"><strong>$cipher</strong>
+                —
+                string<br/><span class="indent">The cipher method to use for encryption.</span></li>
+            <li id="ciphers"><strong>$ciphers</strong>
+                —
+                array<br/><span class="indent">Initialization vector size.</span></li>
+            <li id="ivSize"><strong>$ivSize</strong>
+                —
+                int<br/><span class="indent">Initialization vector size.</span></li>
+            <li id="key"><strong>$key</strong>
+                —
+                string<br/><span class="indent">Key used to encrypt/decrypt string.</span></li>
+            <li id="nonCyphers"><strong>$nonCyphers</strong>
+                —
+                array<br/><span class="indent">Cyphers we don't use.</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="loadCyphers"><a title="serve\security\crypto\encrypters\OpenSSL" href="../classes/serve_security_crypto_encrypters_OpenSSL/loadCyphers.xhtml">loadCyphers()</a>
+                — Load compatible ciphers.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="serve\security\crypto\encrypters\OpenSSL" href="../classes/serve_security_crypto_encrypters_OpenSSL/__construct.xhtml">__construct()</a>
+                — Constructor.</li>
+            <li id="decrypt"><a title="serve\security\crypto\encrypters\OpenSSL" href="../classes/serve_security_crypto_encrypters_OpenSSL/decrypt.xhtml">decrypt()</a>
+                — {@inheritDoc}</li>
+            <li id="encrypt"><a title="serve\security\crypto\encrypters\OpenSSL" href="../classes/serve_security_crypto_encrypters_OpenSSL/encrypt.xhtml">encrypt()</a>
+                — {@inheritDoc}</li>
+          </ul>
+          <h3>Inherited from <a title="serve\security\crypto\encrypters\Encrypter" href="../classes/serve_security_crypto_encrypters_Encrypter.xhtml">serve\security\crypto\encrypters\Encrypter</a></h3>
+          <h4>protected</h4>
+          <ul>
+            <li id="deriveKey"><a title="serve\security\crypto\encrypters\Encrypter" href="../classes/serve_security_crypto_encrypters_Encrypter/deriveKey.xhtml">deriveKey()</a>
+                — Generate a PBKDF2 key derivation of a supplied key.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2022 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

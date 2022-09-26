@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - serve\security\spam\SpamProtector</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#serve_security_spam">serve\security\spam</a>
+          </li>
+          <li class="separator">SpamProtector</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/serve/security/spam/SpamProtector.php.xhtml#line31">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>serve\security\spam\</small>SpamProtector</h1>
+        <h4>SPAM manager.</h4>
+        <p/>
+        <ul>
+          <li>Author: Joe J. Howard</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class SpamProtector
+            {<br/><ul class="none"><li>// members</li><li>private <span title="\serve\security\spam\gibberish\Gibberish">Gibberish</span> <a href="#members">$gibberish</a>;
+                    </li><li>private <span title="\serve\config\Config">Config</span> <a href="#members">$config</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/__construct.xhtml">__construct</a>()
+                    </li><li>public bool <a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/isSpam.xhtml">isSpam</a>()
+                    </li><li>public int <a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/rating.xhtml">rating</a>()
+                    </li><li>public bool <a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/isIpWhiteListed.xhtml">isIpWhiteListed</a>()
+                    </li><li>public bool <a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/isIpBlacklisted.xhtml">isIpBlacklisted</a>()
+                    </li><li>public void <a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/blacklistIpAddress.xhtml">blacklistIpAddress</a>()
+                    </li><li>public void <a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/unBlacklistIpAddress.xhtml">unBlacklistIpAddress</a>()
+                    </li><li>public void <a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/whitelistIpAddress.xhtml">whitelistIpAddress</a>()
+                    </li><li>public void <a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/unWhitelistIpAddress.xhtml">unWhitelistIpAddress</a>()
+                    </li><li>private bool <a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/listContains.xhtml">listContains</a>()
+                    </li><li>private array <a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/addToList.xhtml">addToList</a>()
+                    </li><li>private array <a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/removeFromList.xhtml">removeFromList</a>()
+                    </li><li>private int <a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/countLinks.xhtml">countLinks</a>()
+                    </li><li>private int <a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/countGraylisted.xhtml">countGraylisted</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="config"><strong>$config</strong>
+                —
+                <a title="\serve\config\Config" href="../classes/_serve_config_Config.xhtml">\serve\config\Config</a><br/><span class="indent">Config loader.</span></li>
+            <li id="gibberish"><strong>$gibberish</strong>
+                —
+                <a title="\serve\security\spam\gibberish\Gibberish" href="../classes/_serve_security_spam_gibberish_Gibberish.xhtml">\serve\security\spam\gibberish\Gibberish</a><br/><span class="indent">Gibberish detector.</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="addToList"><a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/addToList.xhtml">addToList()</a>
+                — Add an item to a list.</li>
+            <li id="countGraylisted"><a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/countGraylisted.xhtml">countGraylisted()</a>
+                — Count how many graylisted words are in a string of text.</li>
+            <li id="countLinks"><a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/countLinks.xhtml">countLinks()</a>
+                — Counts how many links are in text.</li>
+            <li id="listContains"><a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/listContains.xhtml">listContains()</a>
+                — Check if a list contains a word.</li>
+            <li id="removeFromList"><a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/removeFromList.xhtml">removeFromList()</a>
+                — Remove an item from a list.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/__construct.xhtml">__construct()</a>
+                — Constructor.</li>
+            <li id="blacklistIpAddress"><a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/blacklistIpAddress.xhtml">blacklistIpAddress()</a>
+                — Blacklists an ip address.</li>
+            <li id="isIpBlacklisted"><a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/isIpBlacklisted.xhtml">isIpBlacklisted()</a>
+                — Checks if an IP address is blacklisted.</li>
+            <li id="isIpWhiteListed"><a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/isIpWhiteListed.xhtml">isIpWhiteListed()</a>
+                — Checks if an IP address is whitelisted.</li>
+            <li id="isSpam"><a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/isSpam.xhtml">isSpam()</a>
+                — Checks if text is SPAM.</li>
+            <li id="rating"><a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/rating.xhtml">rating()</a>
+                — Gets a SPAM rating.</li>
+            <li id="unBlacklistIpAddress"><a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/unBlacklistIpAddress.xhtml">unBlacklistIpAddress()</a>
+                — Remove an ip address from the blacklist.</li>
+            <li id="unWhitelistIpAddress"><a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/unWhitelistIpAddress.xhtml">unWhitelistIpAddress()</a>
+                — Remove an ip address from the whitelist.</li>
+            <li id="whitelistIpAddress"><a title="serve\security\spam\SpamProtector" href="../classes/serve_security_spam_SpamProtector/whitelistIpAddress.xhtml">whitelistIpAddress()</a>
+                — whitelists an ip address.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2022 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

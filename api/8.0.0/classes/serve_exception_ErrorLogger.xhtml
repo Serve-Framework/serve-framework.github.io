@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - serve\exception\ErrorLogger</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#serve_exception">serve\exception</a>
+          </li>
+          <li class="separator">ErrorLogger</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/serve/exception/ErrorLogger.php.xhtml#line26">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>serve\exception\</small>ErrorLogger</h1>
+        <h4>Error logger class.</h4>
+        <p/>
+        <ul>
+          <li>Author: Joe J. Howard</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class ErrorLogger
+            {<br/><ul class="none"><li>// members</li><li>private  <a href="#members">$path</a>;
+                    </li><li>private <span title="\serve\http\request\Environment">Environment</span> <a href="#members">$environment</a>;
+                    </li><li>private <span title="\serve\file\Filesystem">Filesystem</span> <a href="#members">$fileSystem</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="serve\exception\ErrorLogger" href="../classes/serve_exception_ErrorLogger/__construct.xhtml">__construct</a>()
+                    </li><li>public void <a title="serve\exception\ErrorLogger" href="../classes/serve_exception_ErrorLogger/write.xhtml">write</a>()
+                    </li><li>public void <a title="serve\exception\ErrorLogger" href="../classes/serve_exception_ErrorLogger/setPath.xhtml">setPath</a>()
+                    </li><li>private string <a title="serve\exception\ErrorLogger" href="../classes/serve_exception_ErrorLogger/logMsg.xhtml">logMsg</a>()
+                    </li><li>private string <a title="serve\exception\ErrorLogger" href="../classes/serve_exception_ErrorLogger/genericPath.xhtml">genericPath</a>()
+                    </li><li>private string <a title="serve\exception\ErrorLogger" href="../classes/serve_exception_ErrorLogger/errnoPath.xhtml">errnoPath</a>()
+                    </li><li>private string <a title="serve\exception\ErrorLogger" href="../classes/serve_exception_ErrorLogger/errnoToFile.xhtml">errnoToFile</a>()
+                    </li></ul><ul class="none"><li>// Inherited methods from <span title="serve\exception\ExceptionLogicTrait">ExceptionLogicTrait</span></li><li>protected void <a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait/setException.xhtml">setException</a>()
+                        </li><li>protected string <a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait/errType.xhtml">errType</a>()
+                        </li><li>protected string <a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait/exceptionClassName.xhtml">exceptionClassName</a>()
+                        </li><li>protected string <a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait/exceptionParentName.xhtml">exceptionParentName</a>()
+                        </li><li>protected string <a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait/errName.xhtml">errName</a>()
+                        </li><li>protected array <a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait/errTrace.xhtml">errTrace</a>()
+                        </li><li>protected array <a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait/errSource.xhtml">errSource</a>()
+                        </li><li>protected string <a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait/errClass.xhtml">errClass</a>()
+                        </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Uses</h4>
+          <ul>
+            <li>
+              <a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait.xhtml">serve\exception\ExceptionLogicTrait</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="environment"><strong>$environment</strong>
+                —
+                <a title="\serve\http\request\Environment" href="../classes/_serve_http_request_Environment.xhtml">\serve\http\request\Environment</a><br/><span class="indent">HttpEnv instance.</span></li>
+            <li id="fileSystem"><strong>$fileSystem</strong>
+                —
+                <a title="\serve\file\Filesystem" href="../classes/_serve_file_Filesystem.xhtml">\serve\file\Filesystem</a><br/><span class="indent">Filesystem instance.</span></li>
+            <li id="path"><strong>$path</strong>
+                —
+                string<br/><span class="indent">Directory where logs are stored.</span></li>
+          </ul>
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="exception"><strong>$exception</strong>
+                —
+                <a title="Throwable" href="../classes/Throwable.xhtml">Throwable</a><br/><span class="indent">Exception object.</span></li>
+            <li id="sourcePadding"><strong>$sourcePadding</strong>
+                —
+                int<br/><span class="indent">"Context" for error line.</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="errnoPath"><a title="serve\exception\ErrorLogger" href="../classes/serve_exception_ErrorLogger/errnoPath.xhtml">errnoPath()</a>
+                — Get the path to the specific error log file for current error.</li>
+            <li id="errnoToFile"><a title="serve\exception\ErrorLogger" href="../classes/serve_exception_ErrorLogger/errnoToFile.xhtml">errnoToFile()</a>
+                — Convert the error code to the log file name.</li>
+            <li id="genericPath"><a title="serve\exception\ErrorLogger" href="../classes/serve_exception_ErrorLogger/genericPath.xhtml">genericPath()</a>
+                — Get the path to generic error log file.</li>
+            <li id="logMsg"><a title="serve\exception\ErrorLogger" href="../classes/serve_exception_ErrorLogger/logMsg.xhtml">logMsg()</a>
+                — Build and return the log text.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="serve\exception\ErrorLogger" href="../classes/serve_exception_ErrorLogger/__construct.xhtml">__construct()</a>
+                — Constructor.</li>
+            <li id="setPath"><a title="serve\exception\ErrorLogger" href="../classes/serve_exception_ErrorLogger/setPath.xhtml">setPath()</a>
+                — Set the error logs directory.</li>
+            <li id="write"><a title="serve\exception\ErrorLogger" href="../classes/serve_exception_ErrorLogger/write.xhtml">write()</a>
+                — Write the current exception to file.</li>
+          </ul>
+          <h3>Inherited from <a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait.xhtml">serve\exception\ExceptionLogicTrait</a></h3>
+          <h4>protected</h4>
+          <ul>
+            <li id="errClass"><a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait/errClass.xhtml">errClass()</a>
+                — Get the classname of the error file.</li>
+            <li id="errName"><a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait/errName.xhtml">errName()</a>
+                — Convert PHP error code to pretty name.</li>
+            <li id="errSource"><a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait/errSource.xhtml">errSource()</a>
+                — Get source code of error line context.</li>
+            <li id="errTrace"><a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait/errTrace.xhtml">errTrace()</a>
+                — Get the exception call trace.</li>
+            <li id="errType"><a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait/errType.xhtml">errType()</a>
+                — Get text version of PHP error constant.</li>
+            <li id="exceptionClassName"><a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait/exceptionClassName.xhtml">exceptionClassName()</a>
+                — Get the current exception class without namespace.</li>
+            <li id="exceptionParentName"><a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait/exceptionParentName.xhtml">exceptionParentName()</a>
+                — Get the current exception's parent class without namespace.</li>
+            <li id="setException"><a title="serve\exception\ExceptionLogicTrait" href="../traits/serve_exception_ExceptionLogicTrait/setException.xhtml">setException()</a>
+                — Set the exception object.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2022 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

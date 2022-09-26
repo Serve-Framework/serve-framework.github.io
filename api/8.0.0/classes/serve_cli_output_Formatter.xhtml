@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - serve\cli\output\Formatter</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#serve_cli_output">serve\cli\output</a>
+          </li>
+          <li class="separator">Formatter</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/serve/cli/output/Formatter.php.xhtml#line29">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>serve\cli\output\</small>Formatter</h1>
+        <h4>Formatter.</h4>
+        <p/>
+        <ul>
+          <li>Author: Joe J. Howard</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Formatter
+            {<br/><ul class="none"><li>// constants</li><li>const TAG_REGEX = '/(?&lt;!\\\\)&lt;\/?[a-z_]+\&gt;/i';</li><li>const ESCAPED_TAG_REGEX = '/\\\\&lt;(\/?[a-z_]+)\&gt;/i';</li><li>const ANSI_SGR_SEQUENCE_REGEX = "/\033\[([0-9]{1,2};?)+m/";</li></ul><ul class="none"><li>// members</li><li>protected array <a href="#members">$styles</a> =
+                        ;
+                    </li><li>protected array <a href="#members">$userStyles</a> =
+                        ;
+                    </li><li>protected array <a href="#members">$openTags</a> =
+                        ;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/addStyle.xhtml">addStyle</a>()
+                    </li><li>protected string <a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/getTagName.xhtml">getTagName</a>()
+                    </li><li>protected bool <a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/isOpeningTag.xhtml">isOpeningTag</a>()
+                    </li><li>protected string <a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/getSgrResetSequence.xhtml">getSgrResetSequence</a>()
+                    </li><li>protected array <a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/getStyleCodes.xhtml">getStyleCodes</a>()
+                    </li><li>protected string <a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/getSgrStyleSequence.xhtml">getSgrStyleSequence</a>()
+                    </li><li>protected string <a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/openStyle.xhtml">openStyle</a>()
+                    </li><li>protected string <a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/closeStyle.xhtml">closeStyle</a>()
+                    </li><li>protected string <a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/removeTagEscapeCharacter.xhtml">removeTagEscapeCharacter</a>()
+                    </li><li>public string <a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/format.xhtml">format</a>()
+                    </li><li>public string <a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/escape.xhtml">escape</a>()
+                    </li><li>public string <a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/stripTags.xhtml">stripTags</a>()
+                    </li><li>public string <a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/stripSGR.xhtml">stripSGR</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="TAG_REGEX">TAG_REGEX</td>
+              <td>'/(?&lt;!\\\\)&lt;\/?[a-z_]+\&gt;/i'</td>
+            </tr>
+            <tr>
+              <td id="ESCAPED_TAG_REGEX">ESCAPED_TAG_REGEX</td>
+              <td>'/\\\\&lt;(\/?[a-z_]+)\&gt;/i'</td>
+            </tr>
+            <tr>
+              <td id="ANSI_SGR_SEQUENCE_REGEX">ANSI_SGR_SEQUENCE_REGEX</td>
+              <td>"/\033\[([0-9]{1,2};?)+m/"</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="openTags"><strong>$openTags</strong>
+                —
+                array<br/><span class="indent">Open tags.</span></li>
+            <li id="styles"><strong>$styles</strong>
+                —
+                array<br/><span class="indent">Styles.</span></li>
+            <li id="userStyles"><strong>$userStyles</strong>
+                —
+                array<br/><span class="indent">User styles.</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>protected</h4>
+          <ul>
+            <li id="closeStyle"><a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/closeStyle.xhtml">closeStyle()</a>
+                — Returns ANSI SGR escape sequence for style reset and ANSI SGR escape sequence for parent style if the closed tag was nested.</li>
+            <li id="getSgrResetSequence"><a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/getSgrResetSequence.xhtml">getSgrResetSequence()</a>
+                — Returns ANSI SGR escape sequence for style reset.</li>
+            <li id="getSgrStyleSequence"><a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/getSgrStyleSequence.xhtml">getSgrStyleSequence()</a>
+                — Returns ANSI SGR escape sequence for the chosen style(s).</li>
+            <li id="getStyleCodes"><a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/getStyleCodes.xhtml">getStyleCodes()</a>
+                — Returns style codes associated with the tag name.</li>
+            <li id="getTagName"><a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/getTagName.xhtml">getTagName()</a>
+                — Returns the tag name.</li>
+            <li id="isOpeningTag"><a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/isOpeningTag.xhtml">isOpeningTag()</a>
+                — Returns TRUE if the tag is a closing tag and FALSE if not.</li>
+            <li id="openStyle"><a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/openStyle.xhtml">openStyle()</a>
+                — Returns ANSI SGR escape sequence(s) for the chosen style(s) and adds the tag name to the array of open tags.</li>
+            <li id="removeTagEscapeCharacter"><a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/removeTagEscapeCharacter.xhtml">removeTagEscapeCharacter()</a>
+                — Strips escape character from escaped tags.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="addStyle"><a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/addStyle.xhtml">addStyle()</a>
+                — Adds a user defined style.</li>
+            <li id="escape"><a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/escape.xhtml">escape()</a>
+                — {@inheritDoc}</li>
+            <li id="format"><a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/format.xhtml">format()</a>
+                — {@inheritDoc}</li>
+            <li id="stripSGR"><a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/stripSGR.xhtml">stripSGR()</a>
+                — Returns a string where all SGR sequences have been stripped.</li>
+            <li id="stripTags"><a title="serve\cli\output\Formatter" href="../classes/serve_cli_output_Formatter/stripTags.xhtml">stripTags()</a>
+                — {@inheritDoc}</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2022 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

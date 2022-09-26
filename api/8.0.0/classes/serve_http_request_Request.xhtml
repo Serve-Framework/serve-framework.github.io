@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - serve\http\request\Request</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#serve_http_request">serve\http\request</a>
+          </li>
+          <li class="separator">Request</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/serve/http/request/Request.php.xhtml#line29">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>serve\http\request\</small>Request</h1>
+        <h4>Request manager class.</h4>
+        <p/>
+        <ul>
+          <li>Author: Joe J. Howard</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Request
+            {<br/><ul class="none"><li>// constants</li><li>const METHOD_HEAD = 'HEAD';</li><li>const METHOD_GET = 'GET';</li><li>const METHOD_POST = 'POST';</li><li>const METHOD_PUT = 'PUT';</li><li>const METHOD_PATCH = 'PATCH';</li><li>const METHOD_DELETE = 'DELETE';</li><li>const METHOD_OPTIONS = 'OPTIONS';</li><li>const METHOD_OVERRIDE = '_METHOD';</li></ul><ul class="none"><li>// members</li><li>private <span title="\serve\http\request\Headers">Headers</span> <a href="#members">$headers</a>;
+                    </li><li>public <span title="\serve\http\request\Environment">Environment</span> <a href="#members">$environment</a>;
+                    </li><li>private <span title="\serve\http\request\Files">Files</span> <a href="#members">$files</a>;
+                    </li><li>private array <a href="#members">$bots</a> =
+                        ;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/__construct.xhtml">__construct</a>()
+                    </li><li>public string <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/path.xhtml">path</a>()
+                    </li><li>public <span title="Environment">Environment</span> <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/environment.xhtml">environment</a>()
+                    </li><li>public <span title="Headers">Headers</span> <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/headers.xhtml">headers</a>()
+                    </li><li>public <span title="Files">Files</span> <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/files.xhtml">files</a>()
+                    </li><li>public string <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/getMethod.xhtml">getMethod</a>()
+                    </li><li>public bool <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isSecure.xhtml">isSecure</a>()
+                    </li><li>public bool <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isGet.xhtml">isGet</a>()
+                    </li><li>public bool <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isPost.xhtml">isPost</a>()
+                    </li><li>public bool <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isPut.xhtml">isPut</a>()
+                    </li><li>public bool <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isPatch.xhtml">isPatch</a>()
+                    </li><li>public bool <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isDelete.xhtml">isDelete</a>()
+                    </li><li>public bool <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isHead.xhtml">isHead</a>()
+                    </li><li>public bool <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isOptions.xhtml">isOptions</a>()
+                    </li><li>public bool <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isAjax.xhtml">isAjax</a>()
+                    </li><li>public bool <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isFileGet.xhtml">isFileGet</a>()
+                    </li><li>public mixed <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/fetch.xhtml">fetch</a>()
+                    </li><li>public mixed <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/queries.xhtml">queries</a>()
+                    </li><li>public false|string <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/mimeType.xhtml">mimeType</a>()
+                    </li><li>public bool <a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isBot.xhtml">isBot</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="METHOD_HEAD">METHOD_HEAD</td>
+              <td>'HEAD'</td>
+            </tr>
+            <tr>
+              <td id="METHOD_GET">METHOD_GET</td>
+              <td>'GET'</td>
+            </tr>
+            <tr>
+              <td id="METHOD_POST">METHOD_POST</td>
+              <td>'POST'</td>
+            </tr>
+            <tr>
+              <td id="METHOD_PUT">METHOD_PUT</td>
+              <td>'PUT'</td>
+            </tr>
+            <tr>
+              <td id="METHOD_PATCH">METHOD_PATCH</td>
+              <td>'PATCH'</td>
+            </tr>
+            <tr>
+              <td id="METHOD_DELETE">METHOD_DELETE</td>
+              <td>'DELETE'</td>
+            </tr>
+            <tr>
+              <td id="METHOD_OPTIONS">METHOD_OPTIONS</td>
+              <td>'OPTIONS'</td>
+            </tr>
+            <tr>
+              <td id="METHOD_OVERRIDE">METHOD_OVERRIDE</td>
+              <td>'_METHOD'</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="bots"><strong>$bots</strong>
+                —
+                array<br/><span class="indent">List of bot user agnets.</span></li>
+            <li id="files"><strong>$files</strong>
+                —
+                <a title="\serve\http\request\Files" href="../classes/_serve_http_request_Files.xhtml">\serve\http\request\Files</a><br/><span class="indent">Http files.</span></li>
+            <li id="headers"><strong>$headers</strong>
+                —
+                <a title="\serve\http\request\Headers" href="../classes/_serve_http_request_Headers.xhtml">\serve\http\request\Headers</a><br/><span class="indent">Request headers.</span></li>
+          </ul>
+          <h4>public</h4>
+          <ul class="members">
+            <li id="environment"><strong>$environment</strong>
+                —
+                <a title="\serve\http\request\Environment" href="../classes/_serve_http_request_Environment.xhtml">\serve\http\request\Environment</a><br/><span class="indent">Http Environment.</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/__construct.xhtml">__construct()</a>
+                — Constructor.</li>
+            <li id="environment"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/environment.xhtml">environment()</a>
+                — Environment access.</li>
+            <li id="fetch"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/fetch.xhtml">fetch()</a>
+                — Fetch GET and POST request data.</li>
+            <li id="files"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/files.xhtml">files()</a>
+                — Returns uploaded files wrapper.</li>
+            <li id="getMethod"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/getMethod.xhtml">getMethod()</a>
+                — Returns the HTTP request method.</li>
+            <li id="headers"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/headers.xhtml">headers()</a>
+                — Headers access.</li>
+            <li id="isAjax"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isAjax.xhtml">isAjax()</a>
+                — Is this an Ajax request?</li>
+            <li id="isBot"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isBot.xhtml">isBot()</a>
+                — Is the user-agent a bot?</li>
+            <li id="isDelete"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isDelete.xhtml">isDelete()</a>
+                — Is this a DELETE request?</li>
+            <li id="isFileGet"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isFileGet.xhtml">isFileGet()</a>
+                — Is this a GET request for file ?</li>
+            <li id="isGet"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isGet.xhtml">isGet()</a>
+                — Is this a GET request?</li>
+            <li id="isHead"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isHead.xhtml">isHead()</a>
+                — Is this a HEAD request?</li>
+            <li id="isOptions"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isOptions.xhtml">isOptions()</a>
+                — Is this an OPTIONS request?</li>
+            <li id="isPatch"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isPatch.xhtml">isPatch()</a>
+                — Is this a PATCH request?</li>
+            <li id="isPost"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isPost.xhtml">isPost()</a>
+                — Is this a POST request?</li>
+            <li id="isPut"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isPut.xhtml">isPut()</a>
+                — Is this a PUT request?</li>
+            <li id="isSecure"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/isSecure.xhtml">isSecure()</a>
+                — Is this a secure request ?</li>
+            <li id="mimeType"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/mimeType.xhtml">mimeType()</a>
+                — Get MIME Type (type/subtype within Content Type header).</li>
+            <li id="path"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/path.xhtml">path()</a>
+                — Trimmed request path.</li>
+            <li id="queries"><a title="serve\http\request\Request" href="../classes/serve_http_request_Request/queries.xhtml">queries()</a>
+                — Fetch and parse url queries.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2022 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

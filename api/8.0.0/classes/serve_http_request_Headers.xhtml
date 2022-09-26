@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - serve\http\request\Headers</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#serve_http_request">serve\http\request</a>
+          </li>
+          <li class="separator">Headers</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/serve/http/request/Headers.php.xhtml#line81">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>serve\http\request\</small>Headers</h1>
+        <h4>Request headers class.</h4>
+        <p/>
+        <ul>
+          <li>Author: Joe J. Howard</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Headers
+            {<br/><ul class="none"><li>// members</li><li>protected array <a href="#members">$data</a> =
+                        ;
+                    </li><li>protected  <a href="#members">$acceptableContentTypes</a>;
+                    </li><li>protected  <a href="#members">$acceptableLanguages</a>;
+                    </li><li>protected  <a href="#members">$acceptableCharsets</a>;
+                    </li><li>protected  <a href="#members">$acceptableEncodings</a>;
+                    </li><li>private array <a href="#members">$special</a> =
+                        ;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/__construct.xhtml">__construct</a>()
+                    </li><li>public void <a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/reload.xhtml">reload</a>()
+                    </li><li>private array <a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/extract.xhtml">extract</a>()
+                    </li><li>protected string <a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/normalizeKey.xhtml">normalizeKey</a>()
+                    </li><li>protected array <a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/parseAcceptHeader.xhtml">parseAcceptHeader</a>()
+                    </li><li>public array <a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/acceptableContentTypes.xhtml">acceptableContentTypes</a>()
+                    </li><li>public array <a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/acceptableLanguages.xhtml">acceptableLanguages</a>()
+                    </li><li>public array <a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/acceptableCharsets.xhtml">acceptableCharsets</a>()
+                    </li><li>public array <a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/acceptableEncodings.xhtml">acceptableEncodings</a>()
+                    </li><li>public array <a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/asArray.xhtml">asArray</a>()
+                    </li><li>public string|null <a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/__get.xhtml">__get</a>()
+                    </li><li>public void <a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/__set.xhtml">__set</a>()
+                    </li><li>public bool <a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/__isset.xhtml">__isset</a>()
+                    </li><li>public void <a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/__unset.xhtml">__unset</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="special"><strong>$special</strong>
+                —
+                array<br/><span class="indent">Special-case HTTP headers that are otherwise unidentifiable as HTTP headers.</span></li>
+          </ul>
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="acceptableCharsets"><strong>$acceptableCharsets</strong>
+                —
+                array<br/><span class="indent">Acceptable character sets.</span></li>
+            <li id="acceptableContentTypes"><strong>$acceptableContentTypes</strong>
+                —
+                array<br/><span class="indent">Acceptable content types.</span></li>
+            <li id="acceptableEncodings"><strong>$acceptableEncodings</strong>
+                —
+                array<br/><span class="indent">Acceptable encodings.</span></li>
+            <li id="acceptableLanguages"><strong>$acceptableLanguages</strong>
+                —
+                array<br/><span class="indent">Acceptable languages.</span></li>
+            <li id="data"><strong>$data</strong>
+                —
+                array<br/><span class="indent">Array access.</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="extract"><a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/extract.xhtml">extract()</a>
+                — Returns a fresh copy of the headers.</li>
+          </ul>
+          <h4>protected</h4>
+          <ul>
+            <li id="normalizeKey"><a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/normalizeKey.xhtml">normalizeKey()</a>
+                — Normalizes header names.</li>
+            <li id="parseAcceptHeader"><a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/parseAcceptHeader.xhtml">parseAcceptHeader()</a>
+                — Parses a accpet header and returns the values in descending order of preference.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/__construct.xhtml">__construct()</a>
+                — Constructor. Loads the properties internally.</li>
+            <li id="__get"><a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/__get.xhtml">__get()</a>
+                — Get a property by key.</li>
+            <li id="__isset"><a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/__isset.xhtml">__isset()</a>
+                — Check if a property by key exists.</li>
+            <li id="__set"><a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/__set.xhtml">__set()</a>
+                — Set a property by key.</li>
+            <li id="__unset"><a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/__unset.xhtml">__unset()</a>
+                — Unset a property by key.</li>
+            <li id="acceptableCharsets"><a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/acceptableCharsets.xhtml">acceptableCharsets()</a>
+                — Returns an array of acceptable content types in descending order of preference.</li>
+            <li id="acceptableContentTypes"><a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/acceptableContentTypes.xhtml">acceptableContentTypes()</a>
+                — Returns an array of acceptable content types in descending order of preference.</li>
+            <li id="acceptableEncodings"><a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/acceptableEncodings.xhtml">acceptableEncodings()</a>
+                — Returns an array of acceptable content types in descending order of preference.</li>
+            <li id="acceptableLanguages"><a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/acceptableLanguages.xhtml">acceptableLanguages()</a>
+                — Returns an array of acceptable content types in descending order of preference.</li>
+            <li id="asArray"><a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/asArray.xhtml">asArray()</a>
+                — Return all properties.</li>
+            <li id="reload"><a title="serve\http\request\Headers" href="../classes/serve_http_request_Headers/reload.xhtml">reload()</a>
+                — Reload the headers.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2022 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

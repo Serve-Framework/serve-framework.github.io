@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - serve\database\query\Builder</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#serve_database_query">serve\database\query</a>
+          </li>
+          <li class="separator">Builder</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/serve/database/query/Builder.php.xhtml#line22">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>serve\database\query\</small>Builder</h1>
+        <h4>Database SQL builder.</h4>
+        <p/>
+        <ul>
+          <li>Author: Joe J. Howard</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Builder
+            {<br/><ul class="none"><li>// members</li><li>private <span title="\serve\database\connection\ConnectionHandler">ConnectionHandler</span> <a href="#members">$connectionHandler</a>;
+                    </li><li>private <span title="\serve\database\query\Query">Query</span> <a href="#members">$query</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/__construct.xhtml">__construct</a>()
+                    </li><li>public <span title="ConnectionHandler">ConnectionHandler</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/connectionHandler.xhtml">connectionHandler</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/CREATE_TABLE.xhtml">CREATE_TABLE</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/DROP_TABLE.xhtml">DROP_TABLE</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/TRUNCATE_TABLE.xhtml">TRUNCATE_TABLE</a>()
+                    </li><li>public <span title="Alter">Alter</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/ALTER_TABLE.xhtml">ALTER_TABLE</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/FROM.xhtml">FROM</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/UPDATE.xhtml">UPDATE</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/INSERT_INTO.xhtml">INSERT_INTO</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/VALUES.xhtml">VALUES</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/SET.xhtml">SET</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/DELETE_FROM.xhtml">DELETE_FROM</a>()
+                    </li><li>public mixed <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/QUERY.xhtml">QUERY</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/SELECT.xhtml">SELECT</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/WHERE.xhtml">WHERE</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/AND_WHERE.xhtml">AND_WHERE</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/OR_WHERE.xhtml">OR_WHERE</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/JOIN_ON.xhtml">JOIN_ON</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/INNER_JOIN_ON.xhtml">INNER_JOIN_ON</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/LEFT_JOIN_ON.xhtml">LEFT_JOIN_ON</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/RIGHT_JOIN_ON.xhtml">RIGHT_JOIN_ON</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/OUTER_JOIN_ON.xhtml">OUTER_JOIN_ON</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/ORDER_BY.xhtml">ORDER_BY</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/GROUP_BY.xhtml">GROUP_BY</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/GROUP_CONCAT.xhtml">GROUP_CONCAT</a>()
+                    </li><li>public <span title="Builder">Builder</span> <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/LIMIT.xhtml">LIMIT</a>()
+                    </li><li>public mixed <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/ROW.xhtml">ROW</a>()
+                    </li><li>public mixed <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/FIND.xhtml">FIND</a>()
+                    </li><li>public mixed <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/FIND_ALL.xhtml">FIND_ALL</a>()
+                    </li><li>private string <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/indexFilter.xhtml">indexFilter</a>()
+                    </li><li>private string <a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/queryFilter.xhtml">queryFilter</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="connectionHandler"><strong>$connectionHandler</strong>
+                —
+                <a title="\serve\database\connection\ConnectionHandler" href="../classes/_serve_database_connection_ConnectionHandler.xhtml">\serve\database\connection\ConnectionHandler</a><br/><span class="indent">Connection handler.</span></li>
+            <li id="query"><strong>$query</strong>
+                —
+                <a title="\serve\database\query\Query" href="../classes/_serve_database_query_Query.xhtml">\serve\database\query\Query</a><br/><span class="indent">Query.</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="indexFilter"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/indexFilter.xhtml">indexFilter()</a>
+                — Filter a column name to valid SQL.</li>
+            <li id="queryFilter"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/queryFilter.xhtml">queryFilter()</a>
+                — Filter a column name to valid SQL.</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/__construct.xhtml">__construct()</a>
+                — Constructor.</li>
+            <li id="ALTER_TABLE"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/ALTER_TABLE.xhtml">ALTER_TABLE()</a>
+                — Initialize an alter statement.</li>
+            <li id="AND_WHERE"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/AND_WHERE.xhtml">AND_WHERE()</a>
+                — Set an and_where clause.</li>
+            <li id="CREATE_TABLE"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/CREATE_TABLE.xhtml">CREATE_TABLE()</a>
+                — Create a new table with given columns and paramters.</li>
+            <li id="DELETE_FROM"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/DELETE_FROM.xhtml">DELETE_FROM()</a>
+                — Set the query to DELETE and load table.</li>
+            <li id="DROP_TABLE"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/DROP_TABLE.xhtml">DROP_TABLE()</a>
+                — Drop an existing table.</li>
+            <li id="FIND"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/FIND.xhtml">FIND()</a>
+                — Execute a query and limit to single row and/or find a single row by id.</li>
+            <li id="FIND_ALL"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/FIND_ALL.xhtml">FIND_ALL()</a>
+                — Execute a query and find all rows.</li>
+            <li id="FROM"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/FROM.xhtml">FROM()</a>
+                — Set the query to query a given table.</li>
+            <li id="GROUP_BY"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/GROUP_BY.xhtml">GROUP_BY()</a>
+                — Set group by.</li>
+            <li id="GROUP_CONCAT"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/GROUP_CONCAT.xhtml">GROUP_CONCAT()</a>
+                — Add group concat.</li>
+            <li id="INNER_JOIN_ON"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/INNER_JOIN_ON.xhtml">INNER_JOIN_ON()</a>
+                — Set an inner join clause.</li>
+            <li id="INSERT_INTO"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/INSERT_INTO.xhtml">INSERT_INTO()</a>
+                — Set the query to INSERT INTO a given table.</li>
+            <li id="JOIN_ON"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/JOIN_ON.xhtml">JOIN_ON()</a>
+                — Set an join clause.</li>
+            <li id="LEFT_JOIN_ON"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/LEFT_JOIN_ON.xhtml">LEFT_JOIN_ON()</a>
+                — Set a left join clause.</li>
+            <li id="LIMIT"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/LIMIT.xhtml">LIMIT()</a>
+                — Set the limit/offset.</li>
+            <li id="ORDER_BY"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/ORDER_BY.xhtml">ORDER_BY()</a>
+                — Set the orderby.</li>
+            <li id="OR_WHERE"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/OR_WHERE.xhtml">OR_WHERE()</a>
+                — Set an or_where clause.</li>
+            <li id="OUTER_JOIN_ON"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/OUTER_JOIN_ON.xhtml">OUTER_JOIN_ON()</a>
+                — Set an outer join clause.</li>
+            <li id="QUERY"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/QUERY.xhtml">QUERY()</a>
+                — Execute an INSERT, DELETE, UPDATE, SET statement.</li>
+            <li id="RIGHT_JOIN_ON"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/RIGHT_JOIN_ON.xhtml">RIGHT_JOIN_ON()</a>
+                — Set a right join clause.</li>
+            <li id="ROW"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/ROW.xhtml">ROW()</a>
+                — Execute a query and limit to single row.</li>
+            <li id="SELECT"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/SELECT.xhtml">SELECT()</a>
+                — Select values from a table.</li>
+            <li id="SET"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/SET.xhtml">SET()</a>
+                — Set the query to SET and load values.</li>
+            <li id="TRUNCATE_TABLE"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/TRUNCATE_TABLE.xhtml">TRUNCATE_TABLE()</a>
+                — Truncate an existing table.</li>
+            <li id="UPDATE"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/UPDATE.xhtml">UPDATE()</a>
+                — Set the query to UPDATE a given table.</li>
+            <li id="VALUES"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/VALUES.xhtml">VALUES()</a>
+                — Add the values to set.</li>
+            <li id="WHERE"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/WHERE.xhtml">WHERE()</a>
+                — Set a where clause.</li>
+            <li id="connectionHandler"><a title="serve\database\query\Builder" href="../classes/serve_database_query_Builder/connectionHandler.xhtml">connectionHandler()</a>
+                — Get the database connection.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2022 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

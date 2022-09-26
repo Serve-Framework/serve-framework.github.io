@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - serve\access\Access</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li>
+          <a href="../traits.xhtml">Traits</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml#serve_access">serve\access</a>
+          </li>
+          <li class="separator">Access</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/serve/access/Access.php.xhtml#line21">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>serve\access\</small>Access</h1>
+        <h4>Access/Security.</h4>
+        <p/>
+        <ul>
+          <li>Author: Joe J. Howard</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Access
+            {<br/><ul class="none"><li>// members</li><li>private <span title="\serve\http\request\Request">Request</span> <a href="#members">$request</a>;
+                    </li><li>private <span title="\serve\http\response\Response">Response</span> <a href="#members">$response</a>;
+                    </li><li>private <span title="\serve\file\Filesystem">Filesystem</span> <a href="#members">$filesystem</a>;
+                    </li><li>private  <a href="#members">$robotsPath</a>;
+                    </li><li>private <span title="serve\access\bool">bool</span> <a href="#members">$ipBlockEnabled</a>;
+                    </li><li>private  <a href="#members">$ipWhitelist</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="serve\access\Access" href="../classes/serve_access_Access/__construct.xhtml">__construct</a>()
+                    </li><li>public bool <a title="serve\access\Access" href="../classes/serve_access_Access/ipBlockEnabled.xhtml">ipBlockEnabled</a>()
+                    </li><li>public bool <a title="serve\access\Access" href="../classes/serve_access_Access/isIpAllowed.xhtml">isIpAllowed</a>()
+                    </li><li>public void <a title="serve\access\Access" href="../classes/serve_access_Access/block.xhtml">block</a>()
+                    </li><li>public string <a title="serve\access\Access" href="../classes/serve_access_Access/defaultRobotsText.xhtml">defaultRobotsText</a>()
+                    </li><li>public string <a title="serve\access\Access" href="../classes/serve_access_Access/blockAllRobotsText.xhtml">blockAllRobotsText</a>()
+                    </li><li>public void <a title="serve\access\Access" href="../classes/serve_access_Access/saveRobots.xhtml">saveRobots</a>()
+                    </li><li>public void <a title="serve\access\Access" href="../classes/serve_access_Access/deleteRobots.xhtml">deleteRobots</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="filesystem"><strong>$filesystem</strong>
+                —
+                <a title="\serve\file\Filesystem" href="../classes/_serve_file_Filesystem.xhtml">\serve\file\Filesystem</a><br/><span class="indent">Filesystem object.</span></li>
+            <li id="ipBlockEnabled"><strong>$ipBlockEnabled</strong>
+                —
+                <a title="serve\access\bool" href="../classes/serve_access_bool.xhtml">serve\access\bool</a><br/><span class="indent">Is ip address blocking enabled ?</span></li>
+            <li id="ipWhitelist"><strong>$ipWhitelist</strong>
+                —
+                array<br/><span class="indent">Array of whitelisted ip addresses.</span></li>
+            <li id="request"><strong>$request</strong>
+                —
+                <a title="\serve\http\request\Request" href="../classes/_serve_http_request_Request.xhtml">\serve\http\request\Request</a><br/><span class="indent">Request object.</span></li>
+            <li id="response"><strong>$response</strong>
+                —
+                <a title="\serve\http\response\Response" href="../classes/_serve_http_response_Response.xhtml">\serve\http\response\Response</a><br/><span class="indent">Response object.</span></li>
+            <li id="robotsPath"><strong>$robotsPath</strong>
+                —
+                string<br/><span class="indent">Path to robots.txt.</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="serve\access\Access" href="../classes/serve_access_Access/__construct.xhtml">__construct()</a>
+                — Constructor.</li>
+            <li id="block"><a title="serve\access\Access" href="../classes/serve_access_Access/block.xhtml">block()</a>
+                — Block the current request.</li>
+            <li id="blockAllRobotsText"><a title="serve\access\Access" href="../classes/serve_access_Access/blockAllRobotsText.xhtml">blockAllRobotsText()</a>
+                — Returns the block all robots.txt file contents.</li>
+            <li id="defaultRobotsText"><a title="serve\access\Access" href="../classes/serve_access_Access/defaultRobotsText.xhtml">defaultRobotsText()</a>
+                — Returns the default robots.txt file contents.</li>
+            <li id="deleteRobots"><a title="serve\access\Access" href="../classes/serve_access_Access/deleteRobots.xhtml">deleteRobots()</a>
+                — Save the robots.txt file.</li>
+            <li id="ipBlockEnabled"><a title="serve\access\Access" href="../classes/serve_access_Access/ipBlockEnabled.xhtml">ipBlockEnabled()</a>
+                — Is ip blocking enabled ?</li>
+            <li id="isIpAllowed"><a title="serve\access\Access" href="../classes/serve_access_Access/isIpAllowed.xhtml">isIpAllowed()</a>
+                — Is ip address allowed.</li>
+            <li id="saveRobots"><a title="serve\access\Access" href="../classes/serve_access_Access/saveRobots.xhtml">saveRobots()</a>
+                — Save the robots.txt file.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0 - Copyright (C) 2010 - 2022 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>
