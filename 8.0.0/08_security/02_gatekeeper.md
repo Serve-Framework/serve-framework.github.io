@@ -146,18 +146,19 @@ $username = $gatekeeper->forgotUsername($email);
 Serve's Gatekeeper service requires the following table schema:
 
 ```php
-CREATE TABLE `users` (
+DROP TABLE IF EXISTS `serve_users`;
+CREATE TABLE `serve_users` (
     `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-    `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-    `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-    `hashed_pass` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-    `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-    `slug` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-    `role` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-    `status` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-    `access_token` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-    `register_key` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-    `password_key` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+    `username` varchar(255) COLLATE utf8_unicode_ci,
+    `email` varchar(255) COLLATE utf8_unicode_ci,
+    `hashed_pass` varchar(255) COLLATE utf8_unicode_ci,
+    `name` varchar(255) COLLATE utf8_unicode_ci,
+    `slug` varchar(255) COLLATE utf8_unicode_ci,
+    `role` varchar(255) COLLATE utf8_unicode_ci,
+    `status` varchar(255) COLLATE utf8_unicode_ci,
+    `access_token` varchar(255) COLLATE utf8_unicode_ci,
+    `register_key` varchar(255) COLLATE utf8_unicode_ci,
+    `password_key` varchar(255) COLLATE utf8_unicode_ci,
     PRIMARY KEY (`id`),
     UNIQUE KEY `username` (`username`),
     UNIQUE KEY `email` (`email`),
