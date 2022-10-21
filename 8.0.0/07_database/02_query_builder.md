@@ -59,7 +59,7 @@ You can select multiple columns using comma notation:
 $builder->SELECT('id, name, email')-FROM('users')->EXEC();
 ```
 
-You can optionally use an array:
+Or optionally use an array if you prefer:
 ```php
 $builder->SELECT(['id', 'name', 'email'])-FROM('users')->EXEC();
 ```
@@ -76,17 +76,35 @@ $builder->SELECT('id')->FROM('users')->LEFT_JOIN_ON('groups', 'users.group_id = 
 You can select from multiple tables using `dot.notation`:
 
 ```php
-$builder->SELECT('users.id, groups.name')->FROM('users')->LEFT_JOIN_ON('groups', 'users.group_id = groups.id')->EXEC();
+$builder->SELECT('users.id, groups.name')
+->FROM('users')
+->LEFT_JOIN_ON('groups', 'users.group_id = groups.id')
+->EXEC();
 ```
 
 Or use an array:
 ```php
-$builder->SELECT(['users.id, 'groups.name'])->FROM('users')->LEFT_JOIN_ON('groups', 'users.group_id = groups.id')->EXEC();
+$builder->SELECT(['users.id, 'groups.name'])
+->FROM('users')
+->LEFT_JOIN_ON('groups', 'users.group_id = groups.id')
+->EXEC();
 ```
 
 For more complex joins you can also use a multidimensional array:
 ```php
-$builder->SELECT(['users' => ['id, 'email'], 'groups' => ['group_id', 'group_name'] ])->FROM('users')->LEFT_JOIN_ON('groups', 'users.group_id = groups.id')->EXEC();
+$builder->SELECT(['users' => ['id, 'email'], 'groups' => ['group_id', 'group_name'] ])
+->FROM('users')
+->LEFT_JOIN_ON('groups', 'users.group_id = groups.id')
+->EXEC();
+```
+
+When using a `WHERE` clause, you should specify the table using `dot.notation` as you would in SQL:
+```php
+$builder->SELECT(['users.id, 'groups.name'])
+->FROM('users')
+->LEFT_JOIN_ON('groups', 'users.group_id = groups.id')
+->WHERE('users.group_id', '=', 1)
+->EXEC();
 ```
 
 
