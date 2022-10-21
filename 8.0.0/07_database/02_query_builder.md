@@ -92,7 +92,10 @@ $builder->SELECT(['users.id, 'groups.name'])
 
 For more complex joins you can also use a multidimensional array:
 ```php
-$builder->SELECT(['users' => ['id, 'email'], 'groups' => ['group_id', 'group_name'] ])
+$builder->SELECT([
+    'users' => ['id, 'email'],
+    'groups' => ['group_id', 'group_name']
+])
 ->FROM('users')
 ->LEFT_JOIN_ON('groups', 'users.group_id = groups.id')
 ->EXEC();
