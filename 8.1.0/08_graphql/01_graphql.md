@@ -31,7 +31,7 @@ $graphql = $serve->Graphql;
 Configurations can be found the `graphql.php` configuration file.
 
 | Key                  | Var Type               | Description                                 |
-|:---------------------|:-----------------------||:-------------------------------------------|
+|:---------------------|:-----------------------|:--------------------------------------------|
 | domain               | `string`               | Graphql endpoint domain                     |
 | path                 | `string`               | Endpoint path                               |
 | auth                 | `array`                | Array of authentification headers to send   |
