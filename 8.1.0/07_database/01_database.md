@@ -253,4 +253,4 @@ if ($cache->enabled())
 ### Schema
 Serve doesn't ship with a default database schema. The `Gatekeeper` service however requires a user table to function correctly.
 
-> For more details see the [Gatekeeper](/8.1.0/08_security/02_gatekeeper) documentation.
+> For more details see the [Gatekeeper](/8.1.0/09_security/02_gatekeeper) documentation.
