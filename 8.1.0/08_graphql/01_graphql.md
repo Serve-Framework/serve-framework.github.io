@@ -36,7 +36,7 @@ Configurations can be found the `graphql.php` configuration file.
 | path                 | `string`               | Endpoint path                               |
 | auth                 | `array`                | Array of authentification headers to send   |
 | cache                | `boolean`              | Enable or disabled caching requests         |
-| pre_connect          | `Colsure|null`         | Optional pre connection callback            |
+| pre_connect          | `Colsure`/`null`       | Optional pre connection callback            |
 | throttle             | `array`                | Array of throttle config                    |
 | throttle.enabled     | `boolean`              | Enable or disable request throttling        |
 | throttle.limit       | `int`                  | Total request limits per miliseconds        |
