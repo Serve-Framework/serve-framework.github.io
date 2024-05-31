@@ -62,7 +62,6 @@ $connections = $graphql->connections();
 
 The `connect` method attempts to connect to a graphql service and returns a `Client` instance:
 ```php
-# You may need to try catch this if you don't want the exception to be thrown
 $client = $connection->connect();
 ```
 
